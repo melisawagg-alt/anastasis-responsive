@@ -7958,3 +7958,17 @@ body.contacts-page .inner-content > * {
     }
 
 }
+/* =====================================================
+   INDEX — TEAM CARDS
+   430px — 600px
+===================================================== */
+
+@media (min-width:430px) and (max-width:600px) {
+
+    .team-cards .rehab-card img {
+
+        object-position:center 10%;
+
+    }
+
+}
