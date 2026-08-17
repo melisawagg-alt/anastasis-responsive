@@ -7901,7 +7901,7 @@ body.contacts-page .inner-content > * {
 /* =====================================================
    ALL INNER PAGES — HERO UP
    MOBILE ONLY
-   INDEX НЕ ЗАТРАГИВАЕМ
+   INDEX НЕ ЗАТРАГИВАЕМ 
 ===================================================== */
 
 @media (max-width:768px) {
@@ -7909,6 +7909,51 @@ body.contacts-page .inner-content > * {
     body.inner-page .inner-hero {
 
         transform:translateY(-30px);
+
+    }
+
+}
+
+/* =====================================================
+   CTA — DECORATIVE CORNER
+   MOBILE FIX
+===================================================== */
+
+@media (max-width:768px) {
+
+    .cta-box::before {
+
+        top:16px;
+
+        left:16px;
+
+    }
+
+}
+
+
+@media (max-width:480px) {
+
+    .cta-box::before {
+
+        top:12px;
+
+        left:12px;
+
+    }
+
+}
+
+/* =====================================================
+   TABLET HEADER — EXTRA BOTTOM SPACE
+   769px — 1024px фикс херо и текста
+===================================================== */
+
+@media (min-width:769px) and (max-width:1024px) {
+
+    .header .container {
+
+        min-height:190px;
 
     }
 
