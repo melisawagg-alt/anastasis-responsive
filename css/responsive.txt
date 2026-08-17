@@ -1,0 +1,418 @@
+/* =========================================================
+   ANASTASIS RESPONSIVE
+   MOBILE HEADER — TEST
+   БУРГЕР СПРАВА / ЛОГОТИП ПО ЦЕНТРУ
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+
+    /* =====================================================
+       HEADER
+       ===================================================== */
+
+    .header .container {
+        position: relative;
+
+        min-height: 170px;
+
+        padding: 14px 20px 12px;
+    }
+
+
+    /* =====================================================
+       LOGO — ПО ЦЕНТРУ
+       ===================================================== */
+
+    .logo {
+        position: absolute;
+
+        top: 12px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        z-index: 1100;
+    }
+
+    .logo img {
+        width: 190px;
+    }
+
+
+    /* =====================================================
+       HEADER RIGHT
+       ===================================================== */
+
+    .header-right {
+        position: static;
+
+        width: 100%;
+
+        margin-left: 0;
+
+        display: flex;
+
+        align-items: center;
+    }
+
+
+    /* =====================================================
+       BURGER — СПРАВА
+       ===================================================== */
+
+    .burger {
+        display: flex;
+
+        position: absolute;
+
+        top: 16px;
+        right: 20px;
+
+        z-index: 1200;
+    }
+
+
+    /* =====================================================
+       СОЦИАЛЬНЫЕ СЕТИ
+       ПОД ЛОГОТИПОМ
+       ===================================================== */
+
+    .header-social {
+        display: flex;
+
+        position: absolute;
+
+        top: 96px;
+        left: 50%;
+
+        transform: translateX(-50%) !important;
+
+        margin: 0;
+
+        gap: 14px;
+
+        z-index: 1090;
+    }
+
+
+    /* =====================================================
+       СОЦИАЛЬНЫЕ ИКОНКИ
+       ЗОЛОТО + ЗЕЛЁНЫЙ
+       ===================================================== */
+
+    .header-social a i {
+        font-size: 27px;
+
+        background:
+            linear-gradient(
+                135deg,
+                #d6b96b 0%,
+                #8fa875 50%,
+                #d6b96b 100%
+            );
+
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+
+        color: transparent;
+    }
+
+
+    /* =====================================================
+       HOVER СОЦИАЛЬНЫХ ИКОНОК
+       ===================================================== */
+
+    .header-social a:hover i {
+        background:
+            linear-gradient(
+                135deg,
+                #8fa875 0%,
+                #d6b96b 50%,
+                #8fa875 100%
+            );
+
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+
+        color: transparent;
+    }
+
+
+    /* =====================================================
+       ТЕЛЕФОНЫ
+       ПОД СОЦСЕТЯМИ
+       ===================================================== */
+
+    .header-contacts {
+        display: flex;
+
+        position: absolute;
+
+        top: 134px;
+        left: 50%;
+
+        transform: translateX(-50%) !important;
+
+        margin: 0;
+
+        gap: 8px;
+
+        z-index: 1090;
+    }
+
+
+    .header-contacts span {
+        font-size: 16px;
+    }
+
+
+    .header-contacts .divider {
+        font-size: 14px;
+
+        margin: 0;
+    }
+
+
+    /* =====================================================
+       DESKTOP NAV — СКРЫВАЕМ
+       ===================================================== */
+
+    .header-right nav {
+        display: none;
+    }
+
+
+    /* =====================================================
+       ОТКРЫТОЕ МЕНЮ
+       ===================================================== */
+
+    .header:has(.burger.active) .header-right nav {
+        display: flex;
+
+        position: absolute;
+
+        top: 158px;
+        left: 20px;
+        right: 20px;
+
+        width: auto;
+        max-width: none;
+
+        margin: 0;
+
+        padding: 14px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 4px;
+
+        border-radius: 22px;
+
+        z-index: 1150;
+    }
+
+
+    /* =====================================================
+       ПУНКТЫ ОТКРЫТОГО МЕНЮ
+       ===================================================== */
+
+    .header:has(.burger.active) .header-right nav > .menu-item {
+        width: 100%;
+    }
+
+
+    .header:has(.burger.active) .header-right nav > .menu-item > a {
+        width: 100%;
+
+        justify-content: space-between;
+
+        padding: 12px 14px;
+    }
+
+
+    /* =====================================================
+       МОБИЛЬНЫЕ СОЦСЕТИ ВНУТРИ МЕНЮ
+       ===================================================== */
+
+    .mobile-social {
+        display: none;
+    }
+
+}
+
+/* =========================================================
+   BURGER — VISUAL TEST
+   ИКОНКА + «МЕНЮ»
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .burger {
+        width: 52px;
+        height: 52px;
+
+        padding: 0;
+
+        border: 1px solid rgba(201,170,90,.55);
+        border-radius: 14px;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(55,65,42,.92),
+                rgba(25,32,22,.95)
+            );
+
+        box-shadow:
+            0 6px 18px rgba(0,0,0,.22),
+            inset 0 1px 0 rgba(255,255,255,.10);
+
+        gap: 4px;
+    }
+
+
+    /* Линии */
+
+    .burger span {
+        width: 19px;
+        height: 2px;
+    }
+
+    .burger span:nth-child(1) {
+        width: 19px;
+    }
+
+    .burger span:nth-child(2) {
+        width: 15px;
+    }
+
+    .burger span:nth-child(3) {
+        width: 19px;
+    }
+
+
+    /* Надпись МЕНЮ */
+
+    .burger::after {
+        content: "МЕНЮ";
+
+        display: block;
+
+        position: absolute;
+
+        bottom: 5px;
+        left: 0;
+        right: 0;
+
+        text-align: center;
+
+        font-family: "Manrope", sans-serif;
+
+        font-size: 8px;
+        font-weight: 500;
+
+        letter-spacing: 1.4px;
+
+        line-height: 1;
+
+        color: #d6b96b;
+    }
+
+
+    /* Hover */
+
+    .burger:hover {
+        border-color: rgba(214,185,107,.80);
+
+        box-shadow:
+            0 8px 22px rgba(0,0,0,.28),
+            0 0 12px rgba(201,170,90,.08),
+            inset 0 1px 0 rgba(255,255,255,.12);
+    }
+
+
+    /* Активное состояние */
+
+    .burger.active {
+        border-color: rgba(214,185,107,.80);
+    }
+
+
+    .burger.active::after {
+        color: #8fa875;
+    }
+
+}
+
+/* =========================================================
+   BURGER — DECORATIVE LINE
+   ЛИНИЯ ВЫХОДИТ ИЗ БУРГЕРА
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .burger::before {
+        content: "";
+
+        position: absolute;
+
+        top: 50%;
+        right: 100%;
+
+        width: 75px;
+        height: 1px;
+
+        transform: translateY(-50%);
+
+        background:
+            linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba(143,168,117,.35) 35%,
+                rgba(214,185,107,.75) 100%
+            );
+
+        pointer-events: none;
+    }
+
+
+    /* маленькое сужение линии у самого бургера */
+@media (max-width: 1024px) {
+
+    .burger::before {
+        content: "";
+
+        position: absolute;
+
+        top: 50%;
+        right: calc(100% + 10px);
+
+        width: 140px;
+        height: 1px;
+
+        transform: translateY(-50%);
+
+        background:
+            linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba(143,168,117,.45) 25%,
+                #d6b96b 75%,
+                #d6b96b 100%
+            );
+
+        opacity: .9;
+
+        pointer-events: none;
+    }
+
+}
+
+}

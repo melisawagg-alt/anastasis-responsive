@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+    <loc>https://твой-домен.by/</loc>
+    <priority>1.0</priority>
+</url>
+
+<url>
+    <loc>https://твой-домен.by/pages/alcohol.html</loc>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://твой-домен.by/pages/drugs.html</loc>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://твой-домен.by/pages/rehabilitation.html</loc>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://твой-домен.by/pages/codependency.html</loc>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://твой-домен.by/pages/help-family.html</loc>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://твой-домен.by/pages/family-consultation.html</loc>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://твой-домен.by/pages/specialists.html</loc>
+    <priority>0.7</priority>
+</url>
+
+<url>
+    <loc>https://твой-домен.by/pages/spiritual.html</loc>
+    <priority>0.7</priority>
+</url>
+
+<url>
+    <loc>https://твой-домен.by/pages/news.html</loc>
+    <priority>0.6</priority>
+</url>
+
+<url>
+    <loc>https://твой-домен.by/pages/events.html</loc>
+    <priority>0.6</priority>
+</url>
+
+<url>
+    <loc>https://твой-домен.by/pages/donation.html</loc>
+    <priority>0.6</priority>
+</url>
+
+<url>
+    <loc>https://твой-домен.by/pages/support-other.html</loc>
+    <priority>0.6</priority>
+</url>
+
+<url>
+    <loc>https://твой-домен.by/pages/contacts.html</loc>
+    <priority>0.7</priority>
+</url>
+
+<url>
+    <loc>https://твой-домен.by/pages/contact-form.html</loc>
+    <priority>0.6</priority>
+</url>
+
+</urlset>

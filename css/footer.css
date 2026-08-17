@@ -1,0 +1,399 @@
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+
+    position: relative;
+
+    width: 100%;
+
+    margin-top: 0;
+
+    padding: 0;
+
+    background: transparent;
+
+    overflow: hidden;
+}
+
+/* =========================================================
+   FOOTER PANEL
+   ========================================================= */
+
+.footer > .container {
+
+    position: relative;
+
+    width: calc(100% - 70px);
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 32px 35px 20px;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            145deg,
+            #4a5a42 0%,
+            #35442f 100%
+        );
+
+    border:
+        1px solid rgba(201,170,90,.48);
+
+    border-bottom: none;
+
+    border-radius:
+        30px 30px 0 0;
+
+   box-shadow:
+    0 8px 20px rgba(47,53,43,.08),
+    inset 0 1px 0 rgba(255,255,255,.08);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   FOOTER TOP
+   ========================================================= */
+
+.footer-top {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 35px;
+
+    width: 100%;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   FOOTER BRAND
+   ========================================================= */
+
+.footer-top > div:first-child {
+
+    flex: 0 0 auto;
+
+    min-width: 220px;
+}
+
+
+.footer-top h3 {
+
+    margin: 0 0 3px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    color: #f3f1e8;
+
+    letter-spacing: .3px;
+}
+
+
+.footer-place {
+
+    display: block;
+
+    margin-bottom: 2px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #d6b96b;
+}
+
+
+.footer-top p {
+
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    color: rgba(255,255,255,.70);
+}
+
+
+/* =========================================================
+   FOOTER CONTACTS
+   ========================================================= */
+
+.footer-contacts {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   FOOTER MENU
+   ========================================================= */
+
+.footer-menu {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    flex-wrap: wrap;
+
+    gap: 5px 8px;
+
+    width: auto;
+
+    max-width: 100%;
+
+    padding: 7px 10px;
+
+    margin: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(25,35,22,.52),
+            rgba(20,29,18,.38)
+        );
+
+    border:
+        1px solid rgba(214,185,107,.22);
+
+    border-radius: 22px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+    backdrop-filter: blur(8px);
+
+    z-index: 3;
+}
+
+
+/* =========================================================
+   FOOTER LINKS
+   ========================================================= */
+
+.footer-menu a {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 7px 9px;
+
+    color: #f0f0f0;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: -.15px;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition:
+        color .25s ease,
+        background .25s ease,
+        transform .25s ease;
+}
+
+/* =====================================================
+   FOOTER MENU STATES
+===================================================== */
+
+.footer-menu a:hover {
+
+    color:#d6b96b;
+
+    background:
+        rgba(201,170,90,.12);
+
+    transform:translateY(-1px);
+
+}
+
+
+.footer-menu a:focus,
+.footer-menu a:active,
+.footer-menu a:visited {
+
+    outline:none;
+
+    box-shadow:none;
+
+}
+
+
+.footer-menu a {
+
+    -webkit-tap-highlight-color:transparent;
+
+}
+/* =========================================================
+   COPYRIGHT
+   ========================================================= */
+
+.copyright {
+
+    position: relative;
+
+    margin-top: 22px;
+
+    padding-top: 14px;
+
+    border-top:
+        1px solid rgba(214,185,107,.18);
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+    color: rgba(255,255,255,.52);
+
+    text-align: center;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   DECORATIVE GLOW
+   ========================================================= */
+
+.footer > .container::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: -120px;
+
+    bottom: -180px;
+
+    width: 360px;
+
+    height: 360px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(214,185,107,.07) 0%,
+            rgba(214,185,107,.025) 40%,
+            transparent 72%
+        );
+
+    pointer-events: none;
+}
+
+/* =====================================================
+   FOOTER CONTACTS
+   PHONE STYLE
+===================================================== */
+
+.footer-contacts {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+    margin-top:8px;
+
+}
+
+
+/* PHONE LINKS / TEXT */
+
+.footer-contacts * {
+
+    display:block;
+
+    margin:0;
+
+    padding:0;
+
+    font-family:"Manrope", sans-serif;
+
+    font-size:17px;
+
+    font-weight:900;
+
+    line-height:1.45;
+
+    letter-spacing:.4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff 0%,
+            #f3e3b0 45%,
+            #d6b96b 100%
+        );
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    color:transparent;
+
+    text-decoration:none;
+
+}
+.footer-contacts * {
+
+    filter:
+        drop-shadow(0 2px 4px rgba(214,185,107,.25));
+
+}
+
+/* HOVER */
+
+.footer-contacts a:hover {
+
+    opacity:.85;
+
+}

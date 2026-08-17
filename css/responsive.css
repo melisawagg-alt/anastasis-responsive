@@ -1,0 +1,7915 @@
+/* =========================================================
+   ANASTASIS RESPONSIVE
+   BASE + TABLET HEADER
+   ========================================================= */
+
+
+/* =====================================================
+   BASE LOCK
+   ===================================================== */
+
+html,
+body {
+
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+
+}
+
+
+*,
+*::before,
+*::after {
+
+    box-sizing:border-box;
+
+}
+
+
+img {
+
+    max-width:100%;
+    height:auto;
+    display:block;
+
+}
+/* =====================================================
+   GLOBAL FLUID ADAPTIVE
+===================================================== */
+
+
+.container {
+
+    width:100%;
+
+    max-width:1300px;
+
+    margin:0 auto;
+
+    padding-left:35px;
+
+    padding-right:35px;
+
+}
+
+
+@media(max-width:1100px){
+
+    .container {
+
+        padding-left:25px;
+
+        padding-right:25px;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .container {
+
+        padding-left:20px;
+
+        padding-right:20px;
+
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    .container {
+
+        padding-left:15px;
+
+        padding-right:15px;
+
+    }
+
+}
+
+
+/* =====================================================
+   TABLET HEADER
+   max-width:1024px
+   ===================================================== */
+
+
+@media (max-width:1024px){
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+
+.header .container {
+
+    position:relative;
+
+    min-height:170px;
+
+    padding:14px 20px 12px;
+
+}
+
+
+
+/* =====================================================
+   LOGO — CENTER
+   ===================================================== */
+
+
+.logo {
+
+    position:absolute;
+
+    top:12px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:1100;
+
+}
+
+
+.logo img {
+
+    width:190px;
+
+}
+
+
+
+/* =====================================================
+   HEADER RIGHT
+   ===================================================== */
+
+
+.header-right {
+
+    position:relative;
+
+    width:100%;
+
+    margin-left:0;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+
+/* =====================================================
+   PREMIUM BURGER BUTTON
+   ANASTASIS STYLE
+   ===================================================== */
+
+.burger {
+
+    display: flex;
+
+    position: absolute;
+
+    top: 16px;
+    right: 20px;
+
+    width: 68px;
+    height: 68px;
+
+   padding-top: 12px;
+padding-bottom: 18px;
+
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+
+gap: 6px;
+
+    cursor: pointer;
+
+    border-radius: 17px;
+
+
+    border:
+        1px solid rgba(214,185,107,.55);
+
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(101,123,82,.95),
+            rgba(38,52,35,.96)
+        );
+
+
+    box-shadow:
+
+        0 10px 28px rgba(0,0,0,.30),
+
+        inset 0 1px 1px rgba(255,255,255,.15),
+
+        0 0 18px rgba(214,185,107,.15);
+
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+
+    transition:
+
+        transform .3s ease,
+
+        border-color .3s ease,
+
+        box-shadow .3s ease;
+}
+
+
+
+/* =====================================================
+   BURGER LINES
+   ===================================================== */
+
+
+.burger span {
+
+    width:24px;
+
+    height:2px;
+
+    border-radius:3px;
+
+
+    background:
+        linear-gradient(
+            90deg,
+            #8fa875,
+            #d6b96b
+        );
+
+
+    transition:
+        transform .35s ease,
+        opacity .25s ease,
+        width .25s ease;
+}
+
+
+.burger span:nth-child(2){
+
+    width:16px;
+
+}
+
+
+
+/* =====================================================
+   LABEL
+   ===================================================== */
+
+
+.burger::after {
+
+    content:"МЕНЮ";
+
+    position:absolute;
+
+    bottom:10px;
+
+    font-family:"Manrope", sans-serif;
+
+    font-size:10px;
+
+    font-weight:600;
+
+    letter-spacing:1.9px;
+
+    line-height:1;
+
+    color:#d6b96b;
+
+    opacity:.9;
+
+}
+
+
+
+/* =====================================================
+   HOVER
+   ===================================================== */
+
+
+.burger:hover {
+
+    transform:translateY(-2px);
+
+
+    border-color:
+        rgba(214,185,107,.85);
+
+
+    box-shadow:
+
+        0 14px 35px rgba(0,0,0,.35),
+
+        0 0 25px rgba(214,185,107,.25),
+
+        inset 0 1px 0 rgba(255,255,255,.18);
+
+}
+
+
+
+/* =====================================================
+   ACTIVE
+   ===================================================== */
+
+
+.burger.active {
+
+    border-color:
+        rgba(214,185,107,.95);
+
+
+    box-shadow:
+
+        0 12px 35px rgba(0,0,0,.35),
+
+        0 0 28px rgba(143,168,117,.30);
+
+}
+
+
+
+/* =====================================================
+   SOCIAL
+   ===================================================== */
+
+
+.header-social {
+
+    display:flex;
+
+    position:absolute;
+
+    top:96px;
+
+    left:50%;
+
+    transform:translateX(-50%) !important;
+
+    margin:0;
+
+    gap:14px;
+
+    z-index:1090;
+
+}
+
+
+
+.header-social a i {
+
+    font-size:27px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d6b96b 0%,
+            #8fa875 50%,
+            #d6b96b 100%
+        );
+
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    color:transparent;
+
+}
+
+
+
+.header-social a:hover i {
+
+    background:
+        linear-gradient(
+            135deg,
+            #8fa875 0%,
+            #d6b96b 50%,
+            #8fa875 100%
+        );
+
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    color:transparent;
+
+}
+
+
+
+/* =====================================================
+   CONTACTS
+   ===================================================== */
+
+
+.header-contacts {
+
+    display:flex;
+
+    position:absolute;
+
+    top:134px;
+
+    left:50%;
+
+    transform:translateX(-50%) !important;
+
+    margin:0;
+
+    gap:8px;
+
+    z-index:1090;
+
+}
+
+
+.header-contacts span {
+
+    font-size:16px;
+
+}
+
+
+.header-contacts .divider {
+
+    font-size:14px;
+
+    margin:0;
+
+}
+/* =====================================================
+   BURGER MENU
+   ЗАКРЫТО / ОТКРЫТО
+   НЕ МЕНЯТЬ ЛОГИКУ
+   ===================================================== */
+
+
+.header-right nav {
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+    position:absolute;
+
+    top:70px;
+
+    right:8px;
+
+    width:260px;
+
+    padding:22px;
+
+    gap:18px;
+
+    z-index:1150;
+
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:
+        translateY(-8px)
+        scale(.96);
+
+
+    transform-origin:top right;
+
+
+    pointer-events:none;
+
+
+    transition:
+
+        opacity .4s ease,
+
+        transform .7s cubic-bezier(.16,1,.3,1),
+
+        visibility 0s linear .7s;
+
+
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(101,123,82,.82),
+            rgba(38,52,35,.90)
+        );
+
+
+    border:
+
+        1px solid rgba(214,185,107,.35);
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+        0 15px 40px rgba(0,0,0,.35),
+
+        0 0 20px rgba(201,170,90,.12),
+
+        inset 0 1px 0 rgba(255,255,255,.12);
+
+
+
+    backdrop-filter:blur(15px);
+
+    -webkit-backdrop-filter:blur(15px);
+
+}
+
+
+
+.header-right nav.active {
+
+    opacity:1;
+
+    visibility:visible;
+
+
+    transform:
+
+        translateY(0)
+
+        scale(1);
+
+
+    pointer-events:auto;
+
+
+    transition:
+
+        opacity .4s ease,
+
+        transform .7s cubic-bezier(.16,1,.3,1);
+
+}
+
+
+
+/* =====================================================
+   MENU ITEMS
+   ===================================================== */
+
+
+.header-right nav .menu-item {
+
+    width:100%;
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+}
+
+
+
+.header-right nav .menu-toggle {
+
+    display:flex;
+
+    width:100%;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+/* =====================================================
+   SUBMENU
+   ===================================================== */
+
+
+.header-right nav .menu-item > .submenu {
+
+    position:static;
+
+    display:none;
+
+
+    width:calc(100% - 20px);
+
+
+    margin:
+
+        10px 0 0 -10px;
+
+
+    padding:
+
+        10px 15px;
+
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:none !important;
+
+}
+
+
+
+.header-right nav .menu-item.active > .submenu {
+
+    display:flex !important;
+
+    flex-direction:column;
+
+}
+
+
+
+.header-right nav .submenu a {
+
+    display:block;
+
+    width:100%;
+
+    padding:8px 0;
+
+    font-size:14px;
+
+    white-space:normal;
+
+}
+
+
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+   ===================================================== */
+
+
+@media(max-width:768px){
+
+
+
+.header .container {
+
+    min-height:220px;
+
+    padding:15px 20px;
+
+}
+
+
+
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+
+.logo {
+
+    top:15px;
+
+}
+
+
+.logo img {
+
+    width:160px;
+
+}
+
+
+
+/* =====================================================
+   BURGER SIZE
+   ===================================================== */
+
+
+.burger {
+
+    width:52px;
+
+    height:52px;
+
+    top:12px;
+
+    right:8px;
+
+}
+
+
+
+.burger::after {
+
+    font-size:8px;
+
+    bottom:7px;
+
+}
+
+
+
+
+/* =====================================================
+   SOCIAL MOBILE
+   ===================================================== */
+
+
+.header-social {
+
+    top:87px;
+
+    gap:12px;
+
+}
+
+
+
+.header-social a i {
+
+    font-size:27px;
+
+}
+
+
+
+/* =====================================================
+   CONTACTS MOBILE
+   ===================================================== */
+
+
+.header-contacts {
+
+    flex-direction:row;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    flex-wrap:nowrap;
+
+
+    top:124px;
+
+    left:50%;
+
+}
+
+
+
+.header-contacts span {
+
+    font-size:14px;
+
+    white-space:nowrap;
+
+}
+
+
+
+.header-contacts .divider {
+
+    display:block;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* =====================================================
+   HOME HERO
+   ===================================================== */
+
+
+.top {
+
+    width:92%;
+
+    margin:-20px auto 0;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+
+
+.top-left,
+.top-right {
+
+    width:100%;
+
+}
+
+
+
+.hero {
+
+    height:520px;
+
+    border-radius:30px;
+
+}
+
+
+
+.hero-content {
+
+    padding:15px 25px;
+
+}
+
+
+
+.hero h1 {
+
+    font-size:30px;
+
+    line-height:1.2;
+
+    padding-left:10px;
+
+    max-width:260px;
+
+}
+
+
+
+.hero p {
+
+    max-width:100%;
+
+}
+/* =====================================================
+   ABOUT PREVIEW
+   ===================================================== */
+
+
+.about-preview {
+
+    padding:30px 25px;
+
+    border-radius:30px;
+
+}
+
+.about-preview h2 {
+
+    font-size:28px;
+
+}
+   }   
+/* =====================================================
+   INDEX PAGE CARDS SCROLL
+   REHAB + TEAM
+   MOBILE + TABLET
+   ===================================================== */
+
+
+@media (max-width:1100px){
+
+
+    .rehab-cards,
+    #rehab .rehab-cards {
+
+
+        display:flex;
+
+        flex-wrap:nowrap;
+
+        overflow-x:auto;
+
+        gap:20px;
+
+        scroll-snap-type:x mandatory;
+
+        scrollbar-width:none;
+
+        padding-right:20px;
+
+    }
+
+
+
+    .rehab-cards::-webkit-scrollbar {
+
+        display:none;
+
+    }
+
+
+
+    .rehab-cards .rehab-card {
+
+
+        flex:0 0 82%;
+
+        scroll-snap-align:start;
+
+    }
+
+}
+
+
+
+@media(max-width:480px){
+
+
+    .rehab-cards .rehab-card {
+
+
+        flex:0 0 88%;
+
+    }
+
+}
+
+/* =====================================================
+   TEAM CARDS — TABLET
+===================================================== */
+
+@media (min-width:601px) and (max-width:1100px){
+
+    .team-cards .rehab-card {
+
+        flex:0 0 46%;
+
+    }
+
+
+    .team-cards .rehab-card img {
+
+        object-position:center 30%;
+
+    }
+
+}
+/* =========================================================
+   FAMILY — РОДНЫМ И БЛИЗКИМ
+   RESPONSIVE VERSION
+========================================================= */
+
+
+#family {
+
+    position:relative;
+
+    padding:35px 0 60px;
+
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(245,243,237,0),
+            rgba(238,236,228,.45),
+            rgba(245,243,237,0)
+        );
+
+}
+
+
+
+/* =========================================================
+   GLASS CONTAINER
+========================================================= */
+
+
+#family .container {
+
+
+    max-width:1300px;
+
+
+    margin:0 auto;
+
+
+     padding-top:0;
+    padding-bottom:0;
+
+    border:
+
+        1px solid rgba(201,170,90,.6);
+
+
+
+    border-radius:35px;
+
+
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.55),
+            rgba(238,236,225,.45)
+        );
+
+
+
+    box-shadow:
+
+        0 20px 50px rgba(47,53,43,.09);
+
+
+
+    backdrop-filter:blur(10px);
+
+
+    overflow:hidden;
+
+}
+
+
+
+/* =========================================================
+   GRID DESKTOP
+========================================================= */
+
+
+#family .grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+        minmax(0,1fr)
+        minmax(0,1fr);
+
+
+
+    align-items:center;
+
+
+    gap:45px;
+
+}
+
+
+
+/* =========================================================
+   TEXT BLOCK
+========================================================= */
+
+
+#family .grid > div:first-child {
+
+
+    padding:35px 0;
+
+
+}
+
+
+
+#family h2 {
+
+
+    position:relative;
+
+
+    display:inline-block;
+
+
+    margin:0 0 22px;
+
+
+    padding-bottom:14px;
+
+
+
+    font-family:"Playfair Display",serif;
+
+
+    font-size:40px;
+
+
+    font-weight:500;
+
+
+    line-height:1.2;
+
+
+    color:#394631;
+
+}
+
+
+
+#family h2::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    left:0;
+
+
+    bottom:0;
+
+
+    width:140px;
+
+
+    height:1px;
+
+
+
+    background:
+
+
+        linear-gradient(
+            90deg,
+            #d6b96b,
+            transparent
+        );
+
+
+}
+
+
+
+#family p {
+
+
+    margin:0 0 28px;
+
+
+    max-width:520px;
+
+
+    font-size:16.5px;
+
+
+    line-height:1.7;
+
+
+    font-weight:500;
+
+
+    color:#4f584b;
+
+
+}
+
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+
+#family .grid > div:last-child {
+
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+
+#family .grid img {
+
+
+    width:100%;
+
+
+    height:350px;
+
+
+    object-fit:cover;
+
+
+
+    border-radius:20px;
+
+
+
+    border:
+
+        1px solid rgba(201,170,90,.3);
+
+
+
+    box-shadow:
+
+
+        0 18px 38px rgba(47,53,43,.14);
+
+}
+
+
+
+/* =========================================================
+   TABLET
+   1100px
+========================================================= */
+
+
+@media(max-width:1100px){
+
+
+#family .container {
+
+
+    padding:0 25px;
+
+}
+
+
+
+#family .grid {
+
+
+    gap:30px;
+
+}
+
+
+
+#family h2 {
+
+
+    font-size:34px;
+
+}
+
+
+
+#family .grid img {
+
+
+    height:300px;
+
+}
+
+
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+   IMAGE FIRST
+========================================================= */
+
+
+@media(max-width:768px){
+
+
+
+#family {
+
+
+    padding:40px 0;
+
+}
+
+
+
+#family .container {
+
+
+    padding:0 20px;
+
+
+    border-radius:28px;
+
+}
+
+
+
+/*
+   меняем grid на flex,
+   чтобы управлять порядком
+*/
+
+
+#family .grid {
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:20px;
+
+}
+
+
+
+/* ФОТО ПЕРВОЕ */
+
+
+#family .grid > div:last-child {
+
+
+    order:1;
+
+}
+
+
+
+/* ТЕКСТ ВТОРОЙ */
+
+
+#family .grid > div:first-child {
+
+
+    order:2;
+
+
+    padding:20px 0 30px;
+
+
+    text-align:center;
+
+}
+
+
+
+/* TITLE */
+
+
+#family h2 {
+
+
+    font-size:30px;
+
+}
+
+
+
+#family h2::after {
+
+
+    left:50%;
+
+
+    transform:translateX(-50%);
+
+}
+
+
+
+/* TEXT */
+
+
+#family p {
+
+
+    max-width:none;
+
+
+    font-size:16px;
+
+}
+
+
+
+/* IMAGE */
+
+
+#family .grid img {
+
+
+    height:280px;
+
+
+    border-radius:22px;
+
+
+}
+
+
+
+}
+
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+
+@media(max-width:480px){
+
+
+#family .container {
+
+
+    border-radius:22px;
+
+}
+
+
+
+#family h2 {
+
+
+    font-size:27px;
+
+}
+
+
+
+#family .grid img {
+
+
+    height:230px;
+
+}
+
+   }
+/* =====================================================
+   CTA RESPONSIVE
+   FLUID ADAPTIVE
+===================================================== */
+
+
+@media(max-width:1100px){
+
+
+    .cta {
+
+        padding-top:45px !important;
+        padding-bottom:45px !important;
+
+    }
+
+
+    .cta-grid {
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+    }
+
+
+    .cta-box {
+
+        width:100%;
+
+        height:auto;
+
+        min-height:330px;
+
+    }
+
+
+
+}
+
+
+
+/* =====================================================
+   TABLET SECTION SPACING
+===================================================== */
+
+
+@media(max-width:1100px){
+
+
+    .section {
+
+        padding-top:45px !important;
+
+        padding-bottom:45px !important;
+
+    }
+
+
+    #rehab {
+
+        padding-bottom:25px !important;
+
+    }
+
+
+    #family {
+
+        padding-top:25px;
+
+    }
+
+
+}
+
+
+
+/* =====================================================
+   CTA MOBILE
+===================================================== */
+
+
+@media(max-width:768px){
+
+
+    .cta {
+
+        padding-top:35px !important;
+
+        padding-bottom:35px !important;
+
+    }
+
+
+
+    .cta-grid {
+
+        gap:20px;
+
+    }
+
+
+
+    .cta-box {
+
+
+        padding:28px 25px;
+
+        border-radius:25px;
+
+        min-height:auto;
+
+    }
+
+
+
+    .cta-box h2 {
+
+
+        font-size:28px;
+
+        max-width:100%;
+
+    }
+
+
+
+    .cta-box > p {
+
+
+        max-width:100%;
+
+        font-size:16px;
+
+    }
+
+
+
+    /* SUPPORT */
+
+
+    .cta-box.support-box {
+
+
+        height:auto;
+
+        min-height:520px;
+
+        padding:30px 25px;
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+
+
+    .support-box .button {
+
+
+        margin-bottom:25px;
+
+    }
+
+
+
+    .support-box .support-qr {
+
+
+        position:relative;
+
+        top:auto;
+
+        right:auto;
+
+        bottom:auto;
+
+        left:auto;
+
+        transform:none;
+
+        margin:0 auto;
+
+        width:150px;
+
+    }
+
+
+
+    .support-box .support-qr img {
+
+
+        width:140px;
+
+        height:140px;
+
+    }
+
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+
+@media(max-width:480px){
+
+
+
+    .cta-box {
+
+
+        padding:25px 20px;
+
+    }
+
+
+
+    .cta-box h2 {
+
+
+        font-size:25px;
+
+    }
+
+
+
+    .cta-box.support-box {
+
+
+        min-height:500px;
+
+        padding:25px 20px;
+
+    }
+
+
+
+    .support-box .support-qr img {
+
+
+        width:120px;
+
+        height:120px;
+
+    }
+
+
+
+}
+
+/* =====================================================
+   CONTACT RESPONSIVE
+===================================================== */
+
+
+/* TABLET */
+
+@media(max-width:1100px){
+
+
+    .contact-info {
+
+        padding:30px 25px;
+
+    }
+
+
+.contact-items {
+
+grid-template-columns:1fr;
+
+}
+
+
+
+
+    .contact-item {
+
+        min-height:140px;
+
+    }
+
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+
+    .contact-info {
+
+        padding:25px 20px;
+
+        border-radius:25px;
+
+    }
+
+
+
+    .contact-info h2 {
+
+        font-size:30px;
+
+    }
+
+
+
+    .contact-items {
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+
+
+    .contact-item {
+
+
+        width:100%;
+
+        min-height:auto;
+
+
+        padding:
+
+            15px 15px 15px 25px;
+
+
+    }
+
+
+
+    .contact-item p {
+
+        font-size:14px;
+
+        line-height:1.6;
+
+    }
+
+
+
+    .contact-item h3 {
+
+        font-size:19px;
+
+    }
+
+
+
+}
+
+
+
+/* SMALL MOBILE */
+
+@media(max-width:480px){
+
+
+    .contact-info {
+
+        padding:22px 15px;
+
+    }
+
+
+
+    .contact-item {
+
+        padding-left:22px;
+
+    }
+
+
+
+    .contact-item p {
+
+        font-size:13px;
+
+    }
+}
+/* =====================================================
+   FOOTER RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   max-width:1100px
+===================================================== */
+
+@media(max-width:1100px){
+
+
+    .footer > .container {
+
+        width:calc(100% - 50px);
+
+        padding:30px 25px 20px;
+
+    }
+
+
+    .footer-top {
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:25px;
+
+        text-align:center;
+
+    }
+
+
+    .footer-top > div:first-child {
+
+        min-width:auto;
+
+    }
+
+
+    .footer-menu {
+
+        justify-content:center;
+
+        width:100%;
+
+    }
+
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+===================================================== */
+
+@media(max-width:768px){
+
+
+    .footer > .container {
+
+        width:calc(100% - 40px);
+
+        padding:28px 20px 18px;
+
+        border-radius:25px 25px 0 0;
+
+    }
+
+
+
+    .footer-top {
+
+        gap:22px;
+
+    }
+
+
+
+    .footer-top h3 {
+
+        font-size:24px;
+
+    }
+
+
+
+    .footer-top p {
+
+        font-size:13px;
+
+    }
+
+
+
+    .footer-contacts {
+
+        align-items:center;
+
+        gap:8px;
+
+        margin-top:12px;
+
+    }
+
+
+
+    .footer-contacts p {
+
+        font-size:16px;
+
+        font-weight:800;
+
+    }
+
+
+
+    .footer-menu {
+
+        flex-direction:column;
+
+        gap:5px;
+
+        padding:12px;
+
+        width:100%;
+
+        border-radius:20px;
+
+    }
+
+
+.footer-menu a {
+
+width:100%;
+
+padding:10px 5px;
+
+font-size:14px;
+
+}
+
+
+    .copyright {
+
+        margin-top:18px;
+
+        padding-top:12px;
+
+    }
+
+
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+   max-width:480px
+===================================================== */
+
+@media(max-width:480px){
+
+
+    .footer > .container {
+
+        width:calc(100% - 30px);
+
+        padding:25px 15px 16px;
+
+    }
+
+
+
+    .footer-top h3 {
+
+        font-size:22px;
+
+    }
+
+
+
+    .footer-menu a {
+
+        font-size:13px;
+
+    }
+
+
+
+    .footer-contacts p {
+
+        font-size:15px;
+
+    }
+}
+
+/* =====================================================
+   ALCOHOL PAGE — RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   1100px → 769px
+===================================================== */
+
+@media (max-width:1100px) {
+
+    body:has(.alcohol-causes) .inner-hero {
+
+        width:94%;
+
+        margin:
+            30px auto 50px;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-hero > div {
+
+        padding:
+            35px 35px 35px 40px;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-content {
+
+        width:94%;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-content > .info-block {
+
+        padding:
+            32px 35px;
+
+        margin-bottom:35px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-split {
+
+        gap:20px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-split-image {
+
+        height:340px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-text {
+
+        padding:
+            30px 32px;
+
+    }
+
+
+    body:has(.alcohol-causes) .alcohol-causes {
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+    }
+
+
+    body:has(.alcohol-causes) .info-card {
+
+        min-height:230px;
+
+        padding:
+            26px 24px;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-content > .info-block:not(:first-child) {
+
+        padding-left:35px;
+
+        padding-right:35px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+===================================================== */
+
+@media (max-width:768px) {
+
+    body:has(.alcohol-causes) .inner-hero {
+
+        display:flex;
+
+        flex-direction:column;
+
+        width:94%;
+
+        min-height:0;
+
+        margin:
+            25px auto 40px;
+
+        border-radius:25px;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-hero > div {
+
+        padding:
+            28px 25px 25px;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-hero h1 {
+
+        font-size:34px;
+
+        line-height:1.18;
+
+        margin-bottom:20px;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-hero p {
+
+        font-size:15px;
+
+        line-height:1.6;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-hero > img {
+
+        width:100%;
+
+        height:300px;
+
+        object-fit:cover;
+
+        mask-image:none;
+
+        -webkit-mask-image:none;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-content {
+
+        width:94%;
+
+        padding-bottom:50px;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-content > .info-block {
+
+        padding:
+            28px 22px;
+
+        margin-bottom:25px;
+
+        border-radius:22px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-split {
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-split-image {
+
+        height:280px;
+
+        border-radius:20px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-text {
+
+        padding:
+            27px 24px;
+
+        border-radius:20px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-text h2 {
+
+        font-size:27px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-text p {
+
+        font-size:15px;
+
+        line-height:1.6;
+
+    }
+
+
+    body:has(.alcohol-causes) .alcohol-causes {
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+        margin-top:22px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-card {
+
+        min-height:0;
+
+        padding:
+            24px 22px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-card h3 {
+
+        font-size:20px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-card p {
+
+        font-size:15px;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-content > .info-block:not(:first-child) {
+
+        padding-left:22px;
+
+        padding-right:22px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-block > h2 {
+
+        font-size:27px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-block > p,
+
+    body:has(.alcohol-causes) .info-block li {
+
+        font-size:15px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-block ul {
+
+        padding:
+            22px 20px;
+
+    }
+
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+   max-width:480px
+===================================================== */
+
+@media (max-width:480px) {
+
+    body:has(.alcohol-causes) .inner-hero {
+
+        width:96%;
+
+        border-radius:22px;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-hero > div {
+
+        padding:
+            24px 20px;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-hero h1 {
+
+        font-size:30px;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-hero > img {
+
+        height:250px;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-content {
+
+        width:96%;
+
+    }
+
+
+    body:has(.alcohol-causes) .inner-content > .info-block {
+
+        padding:
+            24px 18px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-text {
+
+        padding:
+            24px 20px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-text h2 {
+
+        font-size:25px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-block > h2 {
+
+        font-size:25px;
+
+    }
+
+
+    body:has(.alcohol-causes) .info-block ul {
+
+        padding:
+            20px 17px;
+
+    }
+
+}
+
+/* =====================================================
+   ALCOHOL — INFO SPLIT CENTER
+   TABLET → LARGE TABLET
+===================================================== */
+
+@media (min-width:769px) and (max-width:1100px) {
+
+    body:has(.alcohol-causes) .info-split {
+
+        align-items:center;
+
+    }
+
+}
+
+/* =====================================================
+   DRUGS — RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   769px — 1100px
+===================================================== */
+
+@media (min-width:769px) and (max-width:1100px) {
+
+    /* HERO */
+
+    body:has(.drug-causes) .inner-hero {
+
+        width:94%;
+
+        margin:30px auto 50px;
+
+    }
+
+
+    body:has(.drug-causes) .inner-hero > div {
+
+        padding:35px 35px 35px 40px;
+
+    }
+
+
+    body:has(.drug-causes) .inner-hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+    /* FIRST CONTENT BLOCK */
+
+    body:has(.drug-causes) .info-split {
+
+        align-items:center;
+
+    }
+
+
+    /* CAUSE CARDS */
+
+    body:has(.drug-causes) .drug-causes {
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+    }
+
+
+    body:has(.drug-causes) .info-card {
+
+        min-height:230px;
+
+    }
+
+
+    /* SIGNS */
+
+    body:has(.drug-causes) .signs-list {
+
+        max-width:100%;
+
+    }
+
+
+    /* HELP BLOCK */
+
+    body:has(.drug-causes) .info-help {
+
+        grid-template-columns:
+            minmax(0,1fr) auto;
+
+        gap:30px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+===================================================== */
+
+@media (max-width:768px) {
+
+    /* HERO */
+
+    body:has(.drug-causes) .inner-hero {
+
+        display:flex;
+
+        flex-direction:column;
+
+        width:94%;
+
+        min-height:0;
+
+        margin:25px auto 40px;
+
+    }
+
+
+    body:has(.drug-causes) .inner-hero > div {
+
+        padding:28px 25px;
+
+    }
+
+
+    body:has(.drug-causes) .inner-hero h1 {
+
+        font-size:34px;
+
+    }
+
+
+    body:has(.drug-causes) .inner-hero > img {
+
+        width:100%;
+
+        height:300px;
+
+        object-fit:cover;
+
+        mask-image:none;
+
+        -webkit-mask-image:none;
+
+    }
+
+
+    /* CONTENT */
+
+    body:has(.drug-causes) .inner-content {
+
+        width:94%;
+
+    }
+
+
+    /* FIRST BLOCK */
+
+    body:has(.drug-causes) .info-split {
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+        align-items:stretch;
+
+    }
+
+
+    body:has(.drug-causes) .info-split-image {
+
+        height:280px;
+
+    }
+
+
+    /* CAUSE CARDS */
+
+    body:has(.drug-causes) .drug-causes {
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+    }
+
+
+    body:has(.drug-causes) .info-card {
+
+        min-height:0;
+
+    }
+
+
+    /* SIGNS */
+
+    body:has(.drug-causes) .signs-list {
+
+        width:100%;
+
+        padding:22px 20px;
+
+    }
+
+
+    /* HELP */
+
+    body:has(.drug-causes) .info-help {
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+    }
+
+
+    body:has(.drug-causes) .help-button {
+
+        justify-content:center;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+   max-width:480px
+===================================================== */
+
+@media (max-width:480px) {
+
+    body:has(.drug-causes) .inner-hero {
+
+        width:96%;
+
+    }
+
+
+    body:has(.drug-causes) .inner-hero > div {
+
+        padding:24px 20px;
+
+    }
+
+
+    body:has(.drug-causes) .inner-hero h1 {
+
+        font-size:30px;
+
+    }
+
+
+    body:has(.drug-causes) .inner-hero > img {
+
+        height:250px;
+
+    }
+
+
+    body:has(.drug-causes) .inner-content {
+
+        width:96%;
+
+    }
+
+
+    body:has(.drug-causes) .info-split-image {
+
+        height:240px;
+
+    }
+
+}
+
+/* =====================================================
+   REHABILITATION — RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   769px — 1100px
+===================================================== */
+
+@media (min-width:769px) and (max-width:1100px) {
+
+    body.rehabilitation-page .inner-hero {
+
+        width:94%;
+
+        margin-top:30px;
+        margin-bottom:50px;
+
+    }
+
+
+    body.rehabilitation-page .inner-hero > div {
+
+        padding:
+            35px 35px 35px 40px;
+
+    }
+
+
+    body.rehabilitation-page .inner-hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+    body.rehabilitation-page .inner-content {
+
+        width:94%;
+
+    }
+
+
+    /* КАРТИНКА + ТЕКСТ */
+
+    body.rehabilitation-page .info-split {
+
+        grid-template-columns:
+            minmax(0,1fr)
+            minmax(0,1fr);
+
+        gap:20px;
+
+        align-items:center;
+
+    }
+
+
+    body.rehabilitation-page .info-split-image {
+
+        width:100%;
+
+        min-height:300px;
+
+    }
+
+
+    /* 4 ЭТАПА */
+
+    body.rehabilitation-page .rehab-stages {
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:18px;
+
+    }
+
+
+    body.rehabilitation-page .rehab-stages .info-card {
+
+        min-height:230px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+===================================================== */
+
+@media (max-width:768px) {
+
+    body.rehabilitation-page .inner-hero {
+
+        display:flex;
+
+        flex-direction:column;
+
+        width:94%;
+
+        min-height:0;
+
+        margin:
+            25px auto 40px;
+
+    }
+
+
+    body.rehabilitation-page .inner-hero > div {
+
+        padding:
+            28px 25px;
+
+    }
+
+
+    body.rehabilitation-page .inner-hero h1 {
+
+        font-size:34px;
+
+    }
+
+
+    body.rehabilitation-page .inner-hero > img {
+
+        width:100%;
+
+        height:300px;
+
+        object-fit:cover;
+
+        mask-image:none;
+
+        -webkit-mask-image:none;
+
+    }
+
+
+    body.rehabilitation-page .inner-content {
+
+        width:94%;
+
+        padding-bottom:50px;
+
+    }
+
+
+    /* ВСЕ INFO-SPLIT В ОДНУ КОЛОНКУ */
+
+    body.rehabilitation-page .info-split {
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+
+    body.rehabilitation-page .info-split-image {
+
+        width:100%;
+
+        height:280px;
+
+        min-height:0;
+
+    }
+
+
+    /* 4 ЭТАПА */
+
+    body.rehabilitation-page .rehab-stages {
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+    }
+
+
+    body.rehabilitation-page .rehab-stages .info-card {
+
+        min-height:0;
+
+    }
+
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+   max-width:480px
+===================================================== */
+
+@media (max-width:480px) {
+
+    body.rehabilitation-page .inner-hero {
+
+        width:96%;
+
+    }
+
+
+    body.rehabilitation-page .inner-hero > div {
+
+        padding:
+            24px 20px;
+
+    }
+
+
+    body.rehabilitation-page .inner-hero h1 {
+
+        font-size:30px;
+
+    }
+
+
+    body.rehabilitation-page .inner-hero > img {
+
+        height:250px;
+
+    }
+
+
+    body.rehabilitation-page .inner-content {
+
+        width:96%;
+
+    }
+
+
+    body.rehabilitation-page .info-split-image {
+
+        height:240px;
+
+    }
+
+}
+/* =====================================================
+   CODEPENDENCY — RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   769px — 1100px
+===================================================== */
+
+@media (min-width:769px) and (max-width:1100px) {
+
+    body.codependency-page .inner-hero {
+
+        width:94%;
+
+        gap:20px;
+
+    }
+
+
+    body.codependency-page .inner-hero > div {
+
+        padding:
+            35px 35px;
+
+    }
+
+
+    body.codependency-page .inner-hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+    body.codependency-page .inner-content {
+
+        width:94%;
+
+    }
+
+
+    body.codependency-page .info-split {
+
+        align-items:center;
+
+        gap:20px;
+
+    }
+
+
+    body.codependency-page .inner-content > .info-block {
+
+        padding-left:35px;
+
+        padding-right:35px;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+===================================================== */
+
+@media (max-width:768px) {
+
+    body.codependency-page .inner-hero {
+
+        display:flex;
+
+        flex-direction:column;
+
+        width:94%;
+
+        min-height:0;
+
+        margin:
+            25px auto 40px;
+
+    }
+
+
+    body.codependency-page .inner-hero > div {
+
+        padding:
+            28px 25px;
+
+    }
+
+
+    body.codependency-page .inner-hero h1 {
+
+        font-size:34px;
+
+    }
+
+
+    body.codependency-page .inner-hero > img {
+
+        width:100%;
+
+        height:300px;
+
+        min-height:0;
+
+        object-fit:cover;
+
+    }
+
+
+    body.codependency-page .inner-content {
+
+        width:94%;
+
+    }
+
+
+    body.codependency-page .info-split {
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+
+    body.codependency-page .info-split-image {
+
+        width:100%;
+
+        min-height:0;
+
+        height:280px;
+
+    }
+
+
+    body.codependency-page .inner-content > .info-block {
+
+        padding:
+            28px 22px;
+
+    }
+
+
+    body.codependency-page .inner-content > .info-block:nth-child(3) {
+
+        padding:
+            28px 22px;
+
+    }
+
+
+    body.codependency-page .info-text {
+
+        padding:
+            27px 24px;
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+   max-width:480px
+===================================================== */
+
+@media (max-width:480px) {
+
+    body.codependency-page .inner-hero {
+
+        width:96%;
+
+    }
+
+
+    body.codependency-page .inner-hero > div {
+
+        padding:
+            24px 20px;
+
+    }
+
+
+    body.codependency-page .inner-hero h1 {
+
+        font-size:30px;
+
+    }
+
+
+    body.codependency-page .inner-hero > img {
+
+        height:250px;
+
+    }
+
+
+    body.codependency-page .inner-content {
+
+        width:96%;
+
+    }
+
+
+    body.codependency-page .info-split-image {
+
+        height:240px;
+
+    }
+
+
+    body.codependency-page .info-text {
+
+        padding:
+            24px 20px;
+
+    }
+
+}
+/* =====================================================
+   INNER INFO-SPLIT — TEXT FIRST
+   ALCOHOL + DRUGS + CODEPENDENCY
+===================================================== */
+
+body:has(.alcohol-causes) .inner-content .info-split > .info-text,
+body:has(.drug-causes) .inner-content .info-split > .info-text,
+body.codependency-page .inner-content .info-split > .info-text {
+
+    order:1;
+
+}
+
+
+body:has(.alcohol-causes) .inner-content .info-split > .info-split-image,
+body:has(.drug-causes) .inner-content .info-split > .info-split-image,
+body.codependency-page .inner-content .info-split > .info-split-image {
+
+    order:2;
+
+}
+
+/* =====================================================
+   HELP FAMILY — RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   769px — 1100px
+===================================================== */
+
+@media (min-width:769px) and (max-width:1100px) {
+
+    body.help-family-page .inner-hero {
+
+        width:94%;
+
+        gap:20px;
+
+    }
+
+
+    body.help-family-page .inner-hero > div {
+
+        padding:
+            35px 35px;
+
+    }
+
+
+    body.help-family-page .inner-hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+    body.help-family-page .inner-content {
+
+        width:94%;
+
+    }
+
+
+    body.help-family-page .info-split {
+
+        align-items:center;
+
+        gap:20px;
+
+    }
+
+
+    body.help-family-page .inner-content > .info-block {
+
+        padding-left:35px;
+
+        padding-right:35px;
+
+    }
+
+
+    /* 4 шага */
+
+    body.help-family-page .help-family-actions {
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+    }
+
+
+    body.help-family-page .help-action {
+
+        min-height:145px;
+
+        padding:24px 22px;
+
+        gap:16px;
+
+    }
+
+
+    /* ДЕКОР */
+
+    body.help-family-page .help-family-decoration {
+
+        width:300px;
+
+        height:300px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+===================================================== */
+
+@media (max-width:768px) {
+
+    body.help-family-page .inner-hero {
+
+        display:flex;
+
+        flex-direction:column;
+
+        width:94%;
+
+        min-height:0;
+
+        margin:
+            25px auto 40px;
+
+    }
+
+
+    body.help-family-page .inner-hero > div {
+
+        padding:
+            28px 25px;
+
+    }
+
+
+    body.help-family-page .inner-hero h1 {
+
+        font-size:34px;
+
+    }
+
+
+    body.help-family-page .inner-hero > img {
+
+        width:100%;
+
+        height:300px;
+
+        min-height:0;
+
+        object-fit:cover;
+
+    }
+
+
+    body.help-family-page .inner-content {
+
+        width:94%;
+
+        padding-bottom:50px;
+
+    }
+
+
+    /* ТЕКСТ → ФОТО */
+
+    body.help-family-page .info-split {
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+        align-items:stretch;
+
+    }
+
+
+    body.help-family-page .info-split > .info-text {
+
+        order:1;
+
+    }
+
+
+    body.help-family-page .info-split > .info-split-image {
+
+        order:2;
+
+    }
+
+
+    body.help-family-page .info-split-image {
+
+        width:100%;
+
+        height:280px;
+
+        min-height:0;
+
+    }
+
+
+    body.help-family-page .inner-content > .info-block {
+
+        padding:
+            28px 22px;
+
+    }
+
+
+    /* 4 ШАГА */
+
+    body.help-family-page .help-family-actions {
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+    }
+
+
+    body.help-family-page .help-action {
+
+        min-height:auto;
+
+        padding:
+            22px 20px;
+
+        grid-template-columns:
+            50px 1fr;
+
+        gap:15px;
+
+    }
+
+
+    body.help-family-page .help-action > span {
+
+        width:44px;
+
+        height:44px;
+
+    }
+
+
+    /* ВАЖНО ПОМНИТЬ О СЕБЕ */
+
+    body.help-family-page .help-family-highlight {
+
+        min-height:0;
+
+        padding:
+            28px 22px;
+
+    }
+
+
+    body.help-family-page .help-family-decoration {
+
+        width:240px;
+
+        height:240px;
+
+        right:-55px;
+
+        bottom:-45px;
+
+        opacity:.16;
+
+    }
+
+
+    /* ФИНАЛ */
+
+    body.help-family-page .help-family-final {
+
+        padding:
+            30px 22px;
+
+    }
+
+
+    body.help-family-page .help-button {
+
+        margin-top:24px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+   max-width:480px
+===================================================== */
+
+@media (max-width:480px) {
+
+    body.help-family-page .inner-hero {
+
+        width:96%;
+
+    }
+
+
+    body.help-family-page .inner-hero > div {
+
+        padding:
+            24px 20px;
+
+    }
+
+
+    body.help-family-page .inner-hero h1 {
+
+        font-size:30px;
+
+    }
+
+
+    body.help-family-page .inner-hero > img {
+
+        height:250px;
+
+    }
+
+
+    body.help-family-page .inner-content {
+
+        width:96%;
+
+    }
+
+
+    body.help-family-page .info-split-image {
+
+        height:240px;
+
+    }
+
+
+    body.help-family-page .info-text {
+
+        padding:
+            24px 20px;
+
+    }
+
+
+    body.help-family-page .help-action {
+
+        grid-template-columns:
+            44px 1fr;
+
+        padding:
+            20px 17px;
+
+    }
+
+
+    body.help-family-page .help-action h3 {
+
+        font-size:19px;
+
+    }
+
+
+    body.help-family-page .help-action p {
+
+        font-size:14px;
+
+    }
+
+
+    body.help-family-page .help-family-decoration {
+
+        width:190px;
+
+        height:190px;
+
+    }
+
+}
+/* =====================================================
+   FAMILY CONSULTATIONS — RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   769px — 1100px
+===================================================== */
+
+@media (min-width:769px) and (max-width:1100px) {
+
+    body.family-consultations-page .inner-hero {
+
+        width:94%;
+
+        gap:20px;
+
+    }
+
+
+    body.family-consultations-page .inner-hero > div {
+
+        padding:30px 35px;
+
+    }
+
+
+    body.family-consultations-page .inner-hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+    body.family-consultations-page .inner-content {
+
+        width:94%;
+
+    }
+
+
+    body.family-consultations-page .info-split {
+
+        align-items:center;
+
+        gap:20px;
+
+    }
+
+
+    body.family-consultations-page .family-consultation-cards {
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+    }
+
+
+    body.family-consultations-page .family-consult-card {
+
+        min-height:220px;
+
+        padding:25px 24px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+===================================================== */
+
+@media (max-width:768px) {
+
+    body.family-consultations-page .inner-hero {
+
+        display:flex;
+
+        flex-direction:column;
+
+        width:94%;
+
+        min-height:0;
+
+        margin:25px auto 40px;
+
+    }
+
+
+    body.family-consultations-page .inner-hero > div {
+
+        min-height:0;
+
+        padding:28px 25px;
+
+    }
+
+
+    body.family-consultations-page .inner-hero h1 {
+
+        font-size:34px;
+
+    }
+
+
+    body.family-consultations-page .inner-hero > img {
+
+        width:100%;
+
+        height:300px;
+
+        min-height:0;
+
+        object-fit:cover;
+
+    }
+
+
+    body.family-consultations-page .inner-content {
+
+        width:94%;
+
+        padding-bottom:50px;
+
+    }
+
+
+    /* ТЕКСТ → ФОТО */
+
+    body.family-consultations-page .info-split {
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+
+    body.family-consultations-page .info-split > .info-text {
+
+        order:1;
+
+    }
+
+
+    body.family-consultations-page .info-split > .info-split-image {
+
+        order:2;
+
+    }
+
+
+    body.family-consultations-page .info-split-image {
+
+        width:100%;
+
+        height:280px;
+
+        min-height:0;
+
+    }
+
+
+    body.family-consultations-page .inner-content > .info-block {
+
+        padding:28px 22px;
+
+    }
+
+
+    /* 3 КАРТОЧКИ */
+
+    body.family-consultations-page .family-consultation-cards {
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+    }
+
+
+    body.family-consultations-page .family-consult-card {
+
+        min-height:0;
+
+        padding:24px 22px;
+
+    }
+
+
+    /* ФИНАЛЬНЫЙ БЛОК */
+
+    body.family-consultations-page .family-consultation-highlight {
+
+        padding:30px 22px;
+
+    }
+
+
+    body.family-consultations-page .help-button {
+
+        margin-top:24px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+   max-width:480px
+===================================================== */
+
+@media (max-width:480px) {
+
+    body.family-consultations-page .inner-hero {
+
+        width:96%;
+
+    }
+
+
+    body.family-consultations-page .inner-hero > div {
+
+        padding:24px 20px;
+
+    }
+
+
+    body.family-consultations-page .inner-hero h1 {
+
+        font-size:30px;
+
+    }
+
+
+    body.family-consultations-page .inner-hero > img {
+
+        height:250px;
+
+    }
+
+
+    body.family-consultations-page .inner-content {
+
+        width:96%;
+
+    }
+
+
+    body.family-consultations-page .info-split-image {
+
+        height:240px;
+
+    }
+
+
+    body.family-consultations-page .info-text {
+
+        padding:24px 20px;
+
+    }
+
+
+    body.family-consultations-page .family-consult-card h3 {
+
+        font-size:20px;
+
+    }
+
+
+    body.family-consultations-page .family-consult-card p {
+
+        font-size:14px;
+
+    }
+
+}
+
+/* =====================================================
+   SPECIALISTS PAGE — RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   769px — 1100px
+===================================================== */
+
+@media (min-width:769px) and (max-width:1100px) {
+
+    body.specialists-page .specialists-intro {
+
+        width:92%;
+
+        padding:32px 38px;
+
+    }
+
+
+    body.specialists-page .specialists-intro h1 {
+
+        font-size:34px;
+
+    }
+
+
+    body.specialists-page .specialists-list {
+
+        width:94%;
+
+    }
+
+
+    body.specialists-page .specialist-card {
+
+        width:92%;
+
+        padding:24px;
+
+        margin-bottom:32px;
+
+    }
+
+
+    body.specialists-page .specialist-card-main {
+
+        grid-template-columns:
+            210px minmax(0,1fr);
+
+        gap:24px;
+
+    }
+
+
+    body.specialists-page .specialist-photo {
+
+        height:280px;
+
+    }
+
+
+    body.specialists-page .specialist-info h2 {
+
+        font-size:25px;
+
+    }
+
+
+    body.specialists-page .specialist-short {
+
+        font-size:15px;
+
+    }
+
+
+    body.specialists-page .specialist-details {
+
+        max-width:100%;
+
+    }
+
+
+    body.specialists-page .specialists-contact .container {
+
+        width:94%;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+===================================================== */
+
+@media (max-width:768px) {
+
+    body.specialists-page .specialists-intro {
+
+        width:94%;
+
+        margin-bottom:30px;
+
+        padding:28px 22px;
+
+        border-radius:22px;
+
+    }
+
+
+    body.specialists-page .specialists-intro h1 {
+
+        font-size:30px;
+
+    }
+
+
+    body.specialists-page .specialists-intro-text p {
+
+        font-size:15px;
+
+        line-height:1.65;
+
+    }
+
+
+    body.specialists-page .specialists-list {
+
+        width:94%;
+
+    }
+
+
+    body.specialists-page .specialist-card {
+
+        width:100%;
+
+        padding:20px;
+
+        margin-bottom:25px;
+
+        border-radius:22px;
+
+    }
+
+
+    body.specialists-page .specialist-card-main {
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+
+    body.specialists-page .specialist-photo {
+
+        width:100%;
+
+        height:330px;
+
+    }
+
+
+    body.specialists-page .specialist-info {
+
+        padding:0;
+
+    }
+
+
+    body.specialists-page .specialist-info h2 {
+
+        font-size:24px;
+
+    }
+
+
+    body.specialists-page .specialist-info h3 {
+
+        font-size:14px;
+
+    }
+
+
+    body.specialists-page .specialist-short {
+
+        font-size:15px;
+
+    }
+
+
+    body.specialists-page .specialist-info li {
+
+        font-size:14px;
+
+    }
+
+
+    body.specialists-page .specialist-details {
+
+        max-width:100%;
+
+        padding-left:20px;
+
+        padding-right:20px;
+
+    }
+
+
+    body.specialists-page .specialist-card.active .specialist-details {
+
+        padding:
+            22px 20px;
+
+    }
+
+
+    body.specialists-page .specialist-details p {
+
+        font-size:14px;
+
+        line-height:1.65;
+
+    }
+
+
+    body.specialists-page .specialists-contact {
+
+        padding-bottom:45px;
+
+    }
+
+
+    body.specialists-page .specialists-contact .container {
+
+        width:94%;
+
+    }
+
+
+    body.specialists-page .specialists-contact .info-block {
+
+        padding:
+            30px 22px;
+
+        border-radius:22px;
+
+    }
+
+
+    body.specialists-page .specialists-contact .info-block h2 {
+
+        font-size:27px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+   max-width:480px
+===================================================== */
+
+@media (max-width:480px) {
+
+    body.specialists-page .specialists-intro {
+
+        width:96%;
+
+        padding:24px 18px;
+
+    }
+
+
+    body.specialists-page .specialists-intro h1 {
+
+        font-size:27px;
+
+    }
+
+
+    body.specialists-page .specialists-list {
+
+        width:96%;
+
+    }
+
+
+    body.specialists-page .specialist-card {
+
+        padding:17px;
+
+        border-radius:20px;
+
+    }
+
+
+    body.specialists-page .specialist-photo {
+
+        height:280px;
+
+    }
+
+
+    body.specialists-page .specialist-info h2 {
+
+        font-size:22px;
+
+    }
+
+
+    body.specialists-page .specialist-short {
+
+        font-size:14px;
+
+    }
+
+
+    body.specialists-page .specialist-info li {
+
+        font-size:13px;
+
+    }
+
+
+    body.specialists-page .specialist-more {
+
+        width:100%;
+
+    }
+
+
+    body.specialists-page .specialist-details {
+
+        padding-left:16px;
+
+        padding-right:16px;
+
+    }
+
+
+    body.specialists-page .specialists-contact .info-block {
+
+        padding:
+            26px 18px;
+
+    }
+
+}
+
+/* =====================================================
+   SPECIALISTS — PHOTO POSITION
+   400px — 800px ФОТО ФИКС СПЕЦОВ
+===================================================== */
+
+@media (min-width:380px) and (max-width:800px) {
+
+    body.specialists-page .specialist-photo img {
+
+        object-position:center 25%;
+
+    }
+
+}
+/* =====================================================
+   SPECIALISTS — HEADER RIGHT POSITION
+   800px — 1024px ПОДНЯТИЕ СОЦ СЕТИ ТЕЛЕФОНЫ ..
+===================================================== */
+
+@media (min-width:800px) and (max-width:1024px) {
+
+    body.specialists-page .header-right {
+
+        transform:translateY(-16px);
+
+    }
+
+}
+/* =====================================================
+   SPIRITUAL PAGE — RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   769px — 1100px
+===================================================== */
+
+@media (min-width:769px) and (max-width:1100px) {
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    body.spiritual-page .inner-hero {
+
+        width:94%;
+
+        gap:20px;
+
+    }
+
+
+    body.spiritual-page .inner-hero > div {
+
+        padding:30px 35px;
+
+    }
+
+
+    body.spiritual-page .inner-hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+    /* =================================================
+       CONTENT
+    ================================================= */
+
+    body.spiritual-page .inner-content {
+
+        width:94%;
+
+    }
+
+
+    /* =================================================
+       INFO SPLIT
+    ================================================= */
+
+    body.spiritual-page .info-split {
+
+        align-items:center;
+
+        gap:20px;
+
+    }
+
+
+    /* =================================================
+       INFO IMAGES
+       Компактнее, но без сильного уменьшения
+    ================================================= */
+
+    body.spiritual-page .info-split-image {
+
+        width:100%;
+
+        height:320px;
+
+        min-height:320px;
+
+        align-self:center;
+
+        object-fit:cover;
+
+        object-position:center;
+
+    }
+
+
+    /* =================================================
+       SPIRITUAL VALUES
+       3 → 2 КОЛОНКИ
+    ================================================= */
+
+    body.spiritual-page .spiritual-values {
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:18px;
+
+    }
+
+
+    body.spiritual-page .info-card {
+
+        min-height:225px;
+
+        padding:28px 24px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+===================================================== */
+
+@media (max-width:768px) {
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    body.spiritual-page .inner-hero {
+
+        display:flex;
+
+        flex-direction:column;
+
+        width:94%;
+
+        min-height:0;
+
+        margin:25px auto 40px;
+
+    }
+
+
+    body.spiritual-page .inner-hero > div {
+
+        padding:28px 25px;
+
+    }
+
+
+    body.spiritual-page .inner-hero h1 {
+
+        font-size:34px;
+
+    }
+
+
+    body.spiritual-page .inner-hero > img {
+
+        width:100%;
+
+        height:300px;
+
+        min-height:0;
+
+        object-fit:cover;
+
+    }
+
+
+    /* =================================================
+       CONTENT
+    ================================================= */
+
+    body.spiritual-page .inner-content {
+
+        width:94%;
+
+        padding-bottom:50px;
+
+    }
+
+
+    /* =================================================
+       INFO SPLIT
+    ================================================= */
+
+    body.spiritual-page .info-split {
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+        align-items:stretch;
+
+    }
+
+
+    /* ТЕКСТ ПЕРВЫМ */
+
+    body.spiritual-page .info-split > .info-text {
+
+        order:1;
+
+    }
+
+
+    /* ФОТО ВТОРЫМ */
+
+    body.spiritual-page .info-split > .info-split-image {
+
+        order:2;
+
+    }
+
+
+    body.spiritual-page .info-split-image {
+
+        width:100%;
+
+        height:280px;
+
+        min-height:0;
+
+        object-fit:cover;
+
+        object-position:center;
+
+    }
+
+
+    /* =================================================
+       TEXT
+    ================================================= */
+
+    body.spiritual-page .info-text {
+
+        padding:27px 24px;
+
+    }
+
+
+    /* =================================================
+       SPIRITUAL VALUES
+       3 → 1
+    ================================================= */
+
+    body.spiritual-page .spiritual-values {
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+    }
+
+
+    body.spiritual-page .info-card {
+
+        min-height:0;
+
+        padding:24px 22px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+   max-width:480px
+===================================================== */
+
+@media (max-width:480px) {
+
+    body.spiritual-page .inner-hero {
+
+        width:96%;
+
+    }
+
+
+    body.spiritual-page .inner-hero > div {
+
+        padding:24px 20px;
+
+    }
+
+
+    body.spiritual-page .inner-hero h1 {
+
+        font-size:30px;
+
+    }
+
+
+    body.spiritual-page .inner-hero > img {
+
+        height:250px;
+
+        min-height:250px;
+
+    }
+
+
+    body.spiritual-page .inner-content {
+
+        width:96%;
+
+    }
+
+
+    body.spiritual-page .info-split-image {
+
+        height:240px;
+
+        min-height:240px;
+
+    }
+
+
+    body.spiritual-page .info-text {
+
+        padding:24px 20px;
+
+    }
+
+
+    body.spiritual-page .info-card h3 {
+
+        font-size:22px;
+
+    }
+
+
+    body.spiritual-page .info-card p {
+
+        font-size:14px;
+
+    }
+
+}
+
+/* =====================================================
+   NEWS / LIFE PAGE — RESPONSIVE
+   HORIZONTAL CARDS
+   WP-FRIENDLY
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   769px — 1100px
+===================================================== */
+
+@media (min-width:769px) and (max-width:1100px) {
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    body.life-page .inner-hero {
+
+        width:94%;
+
+        gap:20px;
+
+        min-height:0;
+
+    }
+
+
+    body.life-page .inner-hero > div {
+
+        min-height:300px;
+
+        padding:35px;
+
+    }
+
+
+    body.life-page .inner-hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+    body.life-page .inner-hero > img {
+
+        height:320px;
+
+    }
+
+
+    /* =================================================
+       CONTENT
+    ================================================= */
+
+    body.life-page .inner-content {
+
+        width:94%;
+
+    }
+
+
+    /* =================================================
+       NEWS CARDS
+       HORIZONTAL SCROLL
+    ================================================= */
+
+    body.life-page .news-cards {
+
+        display:flex;
+
+        flex-wrap:nowrap;
+
+        overflow-x:auto;
+
+        gap:20px;
+
+        padding-right:20px;
+
+        scroll-snap-type:x mandatory;
+
+        scrollbar-width:none;
+
+        -webkit-overflow-scrolling:touch;
+
+    }
+
+
+    body.life-page .news-cards::-webkit-scrollbar {
+
+        display:none;
+
+    }
+
+
+    body.life-page .news-card {
+
+        flex:0 0 48%;
+
+        scroll-snap-align:start;
+
+    }
+
+
+    body.life-page .news-card img {
+
+        height:220px;
+
+    }
+
+
+    body.life-page .news-card-content {
+
+        padding:
+            24px 24px 26px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+===================================================== */
+
+@media (max-width:768px) {
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    body.life-page .inner-hero {
+
+        display:flex;
+
+        flex-direction:column;
+
+        width:94%;
+
+        min-height:0;
+
+        margin:
+            25px auto 40px;
+
+        gap:0;
+
+    }
+
+
+    body.life-page .inner-hero > div {
+
+        min-height:0;
+
+        padding:
+            28px 25px;
+
+    }
+
+
+    body.life-page .inner-hero h1 {
+
+        font-size:34px;
+
+    }
+
+
+    body.life-page .inner-hero > img {
+
+        width:100%;
+
+        height:300px;
+
+        object-fit:cover;
+
+    }
+
+
+    /* =================================================
+       CONTENT
+    ================================================= */
+
+    body.life-page .inner-content {
+
+        width:94%;
+
+        padding-bottom:50px;
+
+    }
+
+
+    body.life-page .life-news {
+
+        padding:
+            28px 22px;
+
+    }
+
+
+    /* =================================================
+       NEWS CARDS
+       HORIZONTAL SCROLL
+    ================================================= */
+
+    body.life-page .news-cards {
+
+        display:flex;
+
+        flex-wrap:nowrap;
+
+        overflow-x:auto;
+
+        gap:18px;
+
+        padding-right:15px;
+
+        scroll-snap-type:x mandatory;
+
+        scrollbar-width:none;
+
+        -webkit-overflow-scrolling:touch;
+
+    }
+
+
+    body.life-page .news-cards::-webkit-scrollbar {
+
+        display:none;
+
+    }
+
+
+    body.life-page .news-card {
+
+        flex:0 0 82%;
+
+        scroll-snap-align:start;
+
+    }
+
+
+    body.life-page .news-card img {
+
+        height:280px;
+
+    }
+
+
+    body.life-page .news-card-content {
+
+        padding:
+            24px 22px 26px;
+
+    }
+
+
+    body.life-page .news-card h3 {
+
+        font-size:22px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+   max-width:480px
+===================================================== */
+
+@media (max-width:480px) {
+
+    body.life-page .inner-hero {
+
+        width:96%;
+
+    }
+
+
+    body.life-page .inner-hero > div {
+
+        padding:
+            24px 20px;
+
+    }
+
+
+    body.life-page .inner-hero h1 {
+
+        font-size:30px;
+
+    }
+
+
+    body.life-page .inner-hero > img {
+
+        height:250px;
+
+    }
+
+
+    body.life-page .inner-content {
+
+        width:96%;
+
+    }
+
+
+    body.life-page .life-news {
+
+        padding:
+            24px 18px;
+
+    }
+
+
+    body.life-page .news-card {
+
+        flex-basis:88%;
+
+    }
+
+
+    body.life-page .news-card img {
+
+        height:240px;
+
+    }
+
+
+    body.life-page .news-card-content {
+
+        padding:
+            22px 18px 24px;
+
+    }
+
+
+    body.life-page .news-card h3 {
+
+        font-size:20px;
+
+    }
+
+
+    body.life-page .news-card p {
+
+        font-size:14px;
+
+    }
+
+}
+
+/* =====================================================
+   EVENTS PAGE — RESPONSIVE
+   TABLET + MOBILE
+   WP-FRIENDLY
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   769px — 1100px
+===================================================== */
+
+@media (min-width:769px) and (max-width:1100px) {
+
+    /* =================================================
+       HERO
+       КАРТИНКА СЛЕВА / ТЕКСТ СПРАВА
+    ================================================= */
+
+    body.events-page .inner-hero {
+
+        width:94%;
+
+        gap:20px;
+
+        min-height:0;
+
+        margin:
+            30px auto 55px;
+
+    }
+
+
+    body.events-page .inner-hero > img {
+
+        height:320px;
+
+        min-height:320px;
+
+        object-fit:cover;
+
+    }
+
+
+    body.events-page .inner-hero > div {
+
+        min-height:320px;
+
+        padding:
+            35px;
+
+    }
+
+
+    body.events-page .inner-hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+    /* =================================================
+       CONTENT
+    ================================================= */
+
+    body.events-page .inner-content {
+
+        width:94%;
+
+    }
+
+
+    body.events-page .info-block {
+
+        padding:
+            32px 35px;
+
+        margin-bottom:35px;
+
+    }
+
+
+    /* =================================================
+       О ЦЕНТРЕ
+       КАРТИНКА + ТЕКСТ
+    ================================================= */
+
+    body.events-page .info-split {
+
+        align-items:center;
+
+        gap:20px;
+
+    }
+
+
+    body.events-page .info-split-image {
+
+        height:300px;
+
+        min-height:300px;
+
+        align-self:center;
+
+        object-fit:cover;
+
+    }
+
+
+    /* =================================================
+       ATMOSPHERE
+    ================================================= */
+
+    body.events-page .events-intro {
+
+        padding:
+            38px 40px;
+
+    }
+
+
+    /* =================================================
+       EVENT CARDS
+       HORIZONTAL SCROLL
+    ================================================= */
+
+    body.events-page .event-cards {
+
+        display:flex;
+
+        flex-wrap:nowrap;
+
+        overflow-x:auto;
+
+        gap:20px;
+
+        padding-right:20px;
+
+        scroll-snap-type:x mandatory;
+
+        scrollbar-width:none;
+
+        -webkit-overflow-scrolling:touch;
+
+    }
+
+
+    body.events-page .event-cards::-webkit-scrollbar {
+
+        display:none;
+
+    }
+
+
+    body.events-page .event-card {
+
+        flex:0 0 48%;
+
+        scroll-snap-align:start;
+
+    }
+
+
+    body.events-page .event-card img {
+
+        height:220px;
+
+    }
+
+
+    body.events-page .event-content {
+
+        padding:
+            24px 24px 26px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+===================================================== */
+
+@media (max-width:768px) {
+
+    /* =================================================
+       HERO
+       КАРТИНКА → ТЕКСТ
+    ================================================= */
+
+    body.events-page .inner-hero {
+
+        display:flex;
+
+        flex-direction:column;
+
+        width:94%;
+
+        min-height:0;
+
+        gap:0;
+
+        margin:
+            25px auto 40px;
+
+    }
+
+
+    body.events-page .inner-hero > img {
+
+        order:1;
+
+        width:100%;
+
+        height:300px;
+
+        min-height:0;
+
+        object-fit:cover;
+
+    }
+
+
+    body.events-page .inner-hero > div {
+
+        order:2;
+
+        width:100%;
+
+        min-height:0;
+
+        padding:
+            28px 25px;
+
+    }
+
+
+    body.events-page .inner-hero h1 {
+
+        font-size:34px;
+
+    }
+
+
+    body.events-page .inner-hero p {
+
+        font-size:15px;
+
+        line-height:1.65;
+
+    }
+
+
+    /* =================================================
+       CONTENT
+    ================================================= */
+
+    body.events-page .inner-content {
+
+        width:94%;
+
+        padding-bottom:50px;
+
+    }
+
+
+    body.events-page .info-block {
+
+        padding:
+            28px 22px;
+
+        margin-bottom:25px;
+
+    }
+
+
+    /* =================================================
+       О ЦЕНТРЕ
+       КАРТИНКА → ТЕКСТ
+    ================================================= */
+
+    body.events-page .info-split {
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+
+    body.events-page .info-split-image {
+
+        order:1;
+
+        width:100%;
+
+        height:280px;
+
+        min-height:0;
+
+        object-fit:cover;
+
+    }
+
+
+    body.events-page .info-text {
+
+        order:2;
+
+        width:100%;
+
+    }
+
+
+    /* =================================================
+       INFO TEXT
+    ================================================= */
+
+    body.events-page .info-text {
+
+        padding:
+            27px 24px;
+
+    }
+
+
+    body.events-page .info-text h2 {
+
+        font-size:27px;
+
+    }
+
+
+    body.events-page .info-text p {
+
+        font-size:15px;
+
+        line-height:1.65;
+
+    }
+
+
+    /* =================================================
+       ATMOSPHERE
+    ================================================= */
+
+    body.events-page .events-intro {
+
+        padding:
+            30px 22px;
+
+    }
+
+
+    body.events-page .events-intro h2 {
+
+        font-size:28px;
+
+    }
+
+
+    body.events-page .events-intro p {
+
+        font-size:15px;
+
+    }
+
+
+    /* =================================================
+       EVENT CARDS
+       HORIZONTAL SCROLL
+    ================================================= */
+
+    body.events-page .event-cards {
+
+        display:flex;
+
+        flex-wrap:nowrap;
+
+        overflow-x:auto;
+
+        gap:18px;
+
+        padding-right:15px;
+
+        scroll-snap-type:x mandatory;
+
+        scrollbar-width:none;
+
+        -webkit-overflow-scrolling:touch;
+
+    }
+
+
+    body.events-page .event-cards::-webkit-scrollbar {
+
+        display:none;
+
+    }
+
+
+    body.events-page .event-card {
+
+        flex:0 0 82%;
+
+        scroll-snap-align:start;
+
+    }
+
+
+    body.events-page .event-card img {
+
+        height:280px;
+
+    }
+
+
+    body.events-page .event-content {
+
+        padding:
+            22px 20px 24px;
+
+    }
+
+
+    body.events-page .event-card h3 {
+
+        font-size:21px;
+
+    }
+
+
+    body.events-page .event-card p {
+
+        font-size:14px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+   max-width:480px
+===================================================== */
+
+@media (max-width:480px) {
+
+    body.events-page .inner-hero {
+
+        width:96%;
+
+    }
+
+
+    body.events-page .inner-hero > img {
+
+        height:250px;
+
+    }
+
+
+    body.events-page .inner-hero > div {
+
+        padding:
+            24px 20px;
+
+    }
+
+
+    body.events-page .inner-hero h1 {
+
+        font-size:30px;
+
+    }
+
+
+    body.events-page .inner-content {
+
+        width:96%;
+
+    }
+
+
+    body.events-page .info-block {
+
+        padding:
+            24px 18px;
+
+    }
+
+
+    body.events-page .info-split-image {
+
+        height:240px;
+
+    }
+
+
+    body.events-page .info-text {
+
+        padding:
+            24px 20px;
+
+    }
+
+
+    body.events-page .events-intro {
+
+        padding:
+            26px 18px;
+
+    }
+
+
+    body.events-page .events-intro h2 {
+
+        font-size:25px;
+
+    }
+
+
+    body.events-page .events-intro p {
+
+        font-size:14px;
+
+    }
+
+
+    body.events-page .event-card {
+
+        flex-basis:88%;
+
+    }
+
+
+    body.events-page .event-card img {
+
+        height:240px;
+
+    }
+
+
+    body.events-page .event-content {
+
+        padding:
+            20px 18px 22px;
+
+    }
+
+
+    body.events-page .event-card h3 {
+
+        font-size:20px;
+
+    }
+
+
+    body.events-page .event-card p {
+
+        font-size:14px;
+
+    }
+
+}
+
+/* =====================================================
+   DONATION PAGE — RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   769px — 1100px
+===================================================== */
+
+@media (min-width:769px) and (max-width:1100px) {
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    body.donation-page .inner-hero {
+
+        width:94%;
+
+        gap:20px;
+
+        min-height:0;
+
+        margin:
+            30px auto 55px;
+
+    }
+
+
+    body.donation-page .inner-hero > div {
+
+        min-height:320px;
+
+        padding:
+            35px;
+
+    }
+
+
+    body.donation-page .inner-hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+    body.donation-page .donation-hero-image,
+    body.donation-page .inner-hero-image {
+
+        height:320px;
+
+    }
+
+
+    /* =================================================
+       CONTENT
+    ================================================= */
+
+    body.donation-page .inner-content {
+
+        width:94%;
+
+    }
+
+
+    body.donation-page .donation-block {
+
+        padding:
+            32px 35px;
+
+        margin-bottom:35px;
+
+    }
+
+
+    /* =================================================
+       DONATION METHODS
+       3 → 2
+    ================================================= */
+
+    body.donation-page .donation-methods {
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:20px;
+
+    }
+
+
+    body.donation-page .donation-card {
+
+        padding:
+            26px 24px;
+
+    }
+
+
+    body.donation-page .donation-card-qr img {
+
+        width:155px;
+
+        height:155px;
+
+    }
+
+
+    /* =================================================
+       WHY SUPPORT
+       ================================================= */
+
+    body.donation-page .donation-purpose {
+
+        padding:
+            48px 45px;
+
+    }
+
+
+    body.donation-page .donation-purpose h2 {
+
+        font-size:34px;
+
+    }
+
+
+    body.donation-page .help-points {
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:18px;
+
+    }
+
+
+    body.donation-page .help-points div {
+
+        min-height:155px;
+
+    }
+
+
+    /* =================================================
+       REQUISITES
+       ================================================= */
+
+    body.donation-page .donation-requisites {
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:18px;
+
+    }
+
+
+    body.donation-page .requisites-item {
+
+        padding:22px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+===================================================== */
+
+@media (max-width:768px) {
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    body.donation-page .inner-hero {
+
+        display:flex;
+
+        flex-direction:column;
+
+        width:94%;
+
+        min-height:0;
+
+        gap:0;
+
+        margin:
+            25px auto 40px;
+
+    }
+
+
+    body.donation-page .inner-hero > div {
+
+        order:1;
+
+        width:100%;
+
+        min-height:0;
+
+        padding:
+            28px 25px;
+
+    }
+
+
+    body.donation-page .inner-hero > img {
+
+        order:2;
+
+        width:100%;
+
+        height:300px;
+
+        min-height:0;
+
+        object-fit:cover;
+
+    }
+
+
+    body.donation-page .inner-hero h1 {
+
+        font-size:34px;
+
+    }
+
+
+    body.donation-page .inner-hero p {
+
+        font-size:15px;
+
+        line-height:1.65;
+
+    }
+
+
+    /* =================================================
+       CONTENT
+    ================================================= */
+
+    body.donation-page .inner-content {
+
+        width:94%;
+
+        padding-bottom:50px;
+
+    }
+
+
+    body.donation-page .donation-block {
+
+        padding:
+            28px 22px;
+
+        margin-bottom:25px;
+
+        border-radius:24px;
+
+    }
+
+
+    body.donation-page .donation-block h2 {
+
+        font-size:28px;
+
+    }
+
+
+    /* =================================================
+       DONATION METHODS
+       1 COLUMN
+    ================================================= */
+
+    body.donation-page .donation-methods {
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+    }
+
+
+    body.donation-page .donation-card {
+
+        padding:
+            24px 22px;
+
+    }
+
+
+    body.donation-page .donation-card h3 {
+
+        font-size:21px;
+
+    }
+
+
+    body.donation-page .donation-card p {
+
+        font-size:14px;
+
+    }
+
+
+    body.donation-page .donation-card-qr {
+
+        padding:15px;
+
+    }
+
+
+    body.donation-page .donation-card-qr img {
+
+        width:170px;
+
+        height:170px;
+
+    }
+
+
+    body.donation-page .donation-button {
+
+        width:100%;
+
+        margin-left:0;
+
+        margin-right:0;
+
+    }
+
+
+    /* =================================================
+       WHY SUPPORT
+    ================================================= */
+
+    body.donation-page .donation-purpose {
+
+        padding:
+            34px 22px;
+
+        border-radius:26px;
+
+    }
+
+
+    body.donation-page .donation-purpose h2 {
+
+        font-size:29px;
+
+    }
+
+
+    body.donation-page .donation-purpose p {
+
+        font-size:15px;
+
+        line-height:1.65;
+
+    }
+
+
+    body.donation-page .help-points {
+
+        grid-template-columns:1fr;
+
+        gap:15px;
+
+    }
+
+
+    body.donation-page .help-points div {
+
+        min-height:0;
+
+        padding:
+            22px 18px;
+
+    }
+
+
+    body.donation-page .help-points strong {
+
+        font-size:21px;
+
+    }
+
+
+    body.donation-page .help-points span {
+
+        font-size:14px;
+
+    }
+
+
+    /* =================================================
+       REQUISITES
+       1 COLUMN
+    ================================================= */
+
+    body.donation-page .donation-requisites {
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+    }
+
+
+    body.donation-page .requisites-item {
+
+        padding:
+            22px 18px;
+
+    }
+
+
+    body.donation-page .requisites-item h3 {
+
+        font-size:20px;
+
+    }
+
+
+    body.donation-page .requisites-item p {
+
+        font-size:14px;
+
+        overflow-wrap:anywhere;
+
+    }
+
+
+    body.donation-page .copy-requisites {
+
+        width:100%;
+
+        margin-left:0;
+
+        margin-right:0;
+
+    }
+
+
+    /* =================================================
+       THANKS
+    ================================================= */
+
+    body.donation-page .donation-thanks {
+
+        padding:
+            34px 22px;
+
+    }
+
+
+    body.donation-page .donation-thanks h2 {
+
+        font-size:30px;
+
+    }
+
+
+    body.donation-page .donation-thanks p {
+
+        font-size:15px;
+
+        line-height:1.65;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+   max-width:480px
+===================================================== */
+
+@media (max-width:480px) {
+
+    body.donation-page .inner-hero {
+
+        width:96%;
+
+    }
+
+
+    body.donation-page .inner-hero > div {
+
+        padding:
+            24px 20px;
+
+    }
+
+
+    body.donation-page .inner-hero h1 {
+
+        font-size:30px;
+
+    }
+
+
+    body.donation-page .inner-hero > img {
+
+        height:250px;
+
+    }
+
+
+    body.donation-page .inner-content {
+
+        width:96%;
+
+    }
+
+
+    body.donation-page .donation-block {
+
+        padding:
+            24px 18px;
+
+    }
+
+
+    body.donation-page .donation-block h2 {
+
+        font-size:25px;
+
+    }
+
+
+    body.donation-page .donation-card {
+
+        padding:
+            21px 18px;
+
+    }
+
+
+    body.donation-page .donation-card-qr img {
+
+        width:150px;
+
+        height:150px;
+
+    }
+
+
+    body.donation-page .donation-purpose {
+
+        padding:
+            28px 18px;
+
+    }
+
+
+    body.donation-page .donation-purpose h2 {
+
+        font-size:26px;
+
+    }
+
+
+    body.donation-page .donation-purpose p {
+
+        font-size:14px;
+
+    }
+
+
+    body.donation-page .help-points strong {
+
+        font-size:20px;
+
+    }
+
+
+    body.donation-page .help-points span {
+
+        font-size:13px;
+
+    }
+
+
+    body.donation-page .requisites-item {
+
+        padding:
+            20px 16px;
+
+    }
+
+
+    body.donation-page .donation-thanks {
+
+        padding:
+            28px 18px;
+
+    }
+
+
+    body.donation-page .donation-thanks h2 {
+
+        font-size:27px;
+
+    }
+
+}
+
+/* =====================================================
+   SUPPORT OTHER PAGE — RESPONSIVE
+   WP-FRIENDLY
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   769px — 1100px
+===================================================== */
+
+@media (min-width:769px) and (max-width:1100px) {
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    body.support-other-page .inner-hero {
+
+        width:94%;
+
+        gap:20px;
+
+        min-height:0;
+
+        margin:
+            30px auto 55px;
+
+    }
+
+
+    body.support-other-page .inner-hero img {
+
+        height:320px;
+
+    }
+
+
+    body.support-other-page .inner-hero > div {
+
+        min-height:320px;
+
+        padding:
+            35px;
+
+    }
+
+
+    body.support-other-page .inner-hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+    /* =================================================
+       CONTENT
+    ================================================= */
+
+    body.support-other-page .inner-content {
+
+        width:94%;
+
+    }
+
+
+    /* =================================================
+       ОБЩИЕ БЛОКИ
+    ================================================= */
+
+    body.support-other-page .donation-block {
+
+        padding:
+            34px 35px;
+
+        margin-bottom:35px;
+
+    }
+
+
+    body.support-other-page .inner-content .donation-block > h2 {
+
+        font-size:31px;
+
+    }
+
+
+    /* =================================================
+       СПОСОБЫ ПОДДЕРЖКИ
+       3 → 2
+    ================================================= */
+
+    body.support-other-page .donation-methods {
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:20px;
+
+        padding:
+            35px 30px;
+
+    }
+
+
+    body.support-other-page .donation-card {
+
+        min-height:200px;
+
+        padding:
+            28px 24px;
+
+    }
+
+
+    /* =================================================
+       CMS HISTORY
+    ================================================= */
+
+    body.support-other-page .support-history-block {
+
+        padding:
+            42px 40px;
+
+    }
+
+
+    body.support-other-page .support-history-block h2 {
+
+        font-size:34px;
+
+    }
+
+
+    /* =================================================
+       PARTNER
+    ================================================= */
+
+    body.support-other-page .partners-slider {
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:18px;
+
+    }
+
+
+    body.support-other-page .partner-slide {
+
+        flex:1 1 280px;
+
+        max-width:360px;
+
+    }
+
+
+    /* =================================================
+       REPORTS
+       3 → 2
+    ================================================= */
+
+    body.support-other-page .donation-reports-list {
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:18px;
+
+    }
+
+
+    body.support-other-page .report-card {
+
+        min-height:300px;
+
+    }
+
+
+    /* =================================================
+       THANKS
+    ================================================= */
+
+    body.support-other-page .donation-thanks {
+
+        padding:
+            48px 45px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+===================================================== */
+
+@media (max-width:768px) {
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    body.support-other-page .inner-hero {
+
+        display:flex;
+
+        flex-direction:column;
+
+        width:94%;
+
+        min-height:0;
+
+        gap:0;
+
+        margin:
+            25px auto 40px;
+
+    }
+
+
+    body.support-other-page .inner-hero img {
+
+        order:1;
+
+        width:100%;
+
+        height:300px;
+
+        min-height:0;
+
+        object-fit:cover;
+
+    }
+
+
+    body.support-other-page .inner-hero > div {
+
+        order:2;
+
+        min-height:0;
+
+        padding:
+            28px 25px;
+
+    }
+
+
+    body.support-other-page .inner-hero h1 {
+
+        font-size:34px;
+
+    }
+
+
+    body.support-other-page .inner-hero p {
+
+        font-size:15px;
+
+        line-height:1.65;
+
+    }
+
+
+    /* =================================================
+       CONTENT
+    ================================================= */
+
+    body.support-other-page .inner-content {
+
+        width:94%;
+
+        padding-bottom:50px;
+
+    }
+
+
+    body.support-other-page .inner-content p {
+
+        font-size:15px;
+
+        line-height:1.7;
+
+    }
+
+
+    /* =================================================
+       ОБЩИЕ BLOCKS
+    ================================================= */
+
+    body.support-other-page .donation-block {
+
+        padding:
+            28px 22px;
+
+        margin-bottom:25px;
+
+        border-radius:24px;
+
+    }
+
+
+    body.support-other-page .inner-content .donation-block > h2 {
+
+        font-size:28px;
+
+        line-height:1.25;
+
+    }
+
+
+    /* =================================================
+       СПОСОБЫ ПОДДЕРЖКИ
+    ================================================= */
+
+    body.support-other-page .donation-methods {
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+        padding:
+            24px 18px;
+
+        border-radius:24px;
+
+    }
+
+
+    body.support-other-page .donation-card {
+
+        min-height:0;
+
+        padding:
+            24px 20px;
+
+    }
+
+
+    body.support-other-page .donation-card h3 {
+
+        font-size:21px;
+
+    }
+
+
+    body.support-other-page .donation-card p {
+
+        font-size:14px;
+
+    }
+
+
+    /* =================================================
+       CMS HISTORY
+    ================================================= */
+
+    body.support-other-page .support-history-block {
+
+        padding:
+            30px 22px;
+
+        border-radius:26px;
+
+    }
+
+
+    body.support-other-page .support-history-block h2 {
+
+        font-size:29px;
+
+        line-height:1.25;
+
+    }
+
+
+    body.support-other-page .support-history-block > p {
+
+        font-size:14px;
+
+        margin-bottom:30px;
+
+    }
+
+
+    /* =================================================
+       PARTNERS
+    ================================================= */
+
+    body.support-other-page .partners-slider {
+
+        display:flex;
+
+        flex-wrap:nowrap;
+
+        overflow-x:auto;
+
+        justify-content:flex-start;
+
+        gap:16px;
+
+        padding-right:12px;
+
+        scrollbar-width:none;
+
+        -webkit-overflow-scrolling:touch;
+
+    }
+
+
+    body.support-other-page .partners-slider::-webkit-scrollbar {
+
+        display:none;
+
+    }
+
+
+    body.support-other-page .partner-slide {
+
+        flex:0 0 82%;
+
+        max-width:none;
+
+    }
+
+
+    /* =================================================
+       REPORTS
+       1 COLUMN
+    ================================================= */
+
+    body.support-other-page .donation-reports-list {
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+    }
+
+
+    body.support-other-page .report-card {
+
+        min-height:0;
+
+    }
+
+
+    body.support-other-page .report-card img {
+
+        height:220px;
+
+    }
+
+
+    body.support-other-page .report-card div {
+
+        padding:
+            20px;
+
+    }
+
+
+    body.support-other-page .report-card h4 {
+
+        font-size:20px;
+
+    }
+
+
+    body.support-other-page .report-card p {
+
+        font-size:14px;
+
+    }
+
+
+    /* =================================================
+       DIVIDER BETWEEN CMS SECTIONS
+    ================================================= */
+
+    body.support-other-page .support-column + .support-column {
+
+        padding-top:35px;
+
+        margin-top:35px;
+
+    }
+
+
+    /* =================================================
+       THANKS
+    ================================================= */
+
+    body.support-other-page .donation-thanks {
+
+        padding:
+            34px 22px;
+
+        border-radius:26px;
+
+    }
+
+
+    body.support-other-page .donation-thanks h2 {
+
+        font-size:30px;
+
+    }
+
+
+    body.support-other-page .donation-thanks p {
+
+        font-size:15px;
+
+        line-height:1.65;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+   max-width:480px
+===================================================== */
+
+@media (max-width:480px) {
+
+    body.support-other-page .inner-hero {
+
+        width:96%;
+
+    }
+
+
+    body.support-other-page .inner-hero img {
+
+        height:250px;
+
+    }
+
+
+    body.support-other-page .inner-hero > div {
+
+        padding:
+            24px 20px;
+
+    }
+
+
+    body.support-other-page .inner-hero h1 {
+
+        font-size:30px;
+
+    }
+
+
+    body.support-other-page .inner-content {
+
+        width:96%;
+
+    }
+
+
+    body.support-other-page .donation-block {
+
+        padding:
+            24px 18px;
+
+    }
+
+
+    body.support-other-page .inner-content .donation-block > h2 {
+
+        font-size:25px;
+
+    }
+
+
+    body.support-other-page .donation-methods {
+
+        padding:
+            20px 15px;
+
+    }
+
+
+    body.support-other-page .donation-card {
+
+        padding:
+            21px 17px;
+
+    }
+
+
+    body.support-other-page .support-history-block {
+
+        padding:
+            26px 18px;
+
+    }
+
+
+    body.support-other-page .support-history-block h2 {
+
+        font-size:26px;
+
+    }
+
+
+    body.support-other-page .partner-slide {
+
+        flex-basis:88%;
+
+        padding:
+            24px 18px;
+
+    }
+
+
+    body.support-other-page .report-card img {
+
+        height:200px;
+
+    }
+
+
+    body.support-other-page .donation-thanks {
+
+        padding:
+            28px 18px;
+
+    }
+
+
+    body.support-other-page .donation-thanks h2 {
+
+        font-size:27px;
+
+    }
+
+}
+
+/* =====================================================
+   CONTACTS PAGE — RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   769px — 1100px
+===================================================== */
+
+@media (min-width:769px) and (max-width:1100px) {
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    body.contacts-page .inner-hero {
+
+        width:94%;
+
+        gap:20px;
+
+        min-height:0;
+
+        margin:
+            30px auto 55px;
+
+    }
+
+
+    body.contacts-page .inner-hero-image {
+
+        grid-column:1;
+
+        grid-row:1;
+
+    }
+
+
+    body.contacts-page .inner-hero-image img {
+
+        width:100%;
+
+        height:320px;
+
+        object-fit:cover;
+
+    }
+
+
+    body.contacts-page .inner-hero-text {
+
+        grid-column:2;
+
+        grid-row:1;
+
+        min-height:320px;
+
+        padding:
+            35px;
+
+    }
+
+
+    body.contacts-page .inner-hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+    /* =================================================
+       CONTACT INFO
+    ================================================= */
+
+    body.contacts-page .inner-content {
+
+        width:94%;
+
+    }
+
+
+    body.contacts-page .contacts-info {
+
+        margin:
+            35px auto 50px;
+
+        padding:
+            26px 28px;
+
+    }
+
+
+    body.contacts-page .contacts-info h2 {
+
+        font-size:31px;
+
+    }
+
+
+    body.contacts-page .contact-grid {
+
+        grid-template-columns:
+            1.3fr
+            .9fr
+            .9fr;
+
+    }
+
+
+    body.contacts-page .contact-column {
+
+        padding:
+            5px 20px;
+
+    }
+
+
+    /* =================================================
+       MAP
+    ================================================= */
+
+    body.contacts-page .map-block {
+
+        padding:
+            25px 28px;
+
+        margin-bottom:50px;
+
+    }
+
+
+    body.contacts-page .map-placeholder {
+
+        height:320px;
+
+    }
+
+
+    /* =================================================
+       ADMISSION
+    ================================================= */
+
+    body.contacts-page .info-split {
+
+        grid-template-columns:
+            minmax(0,1fr)
+            minmax(0,1fr);
+
+        gap:30px;
+
+        padding:
+            32px 35px;
+
+    }
+
+
+    body.contacts-page .info-text:first-child {
+
+        padding-right:25px;
+
+    }
+
+
+    body.contacts-page .info-text h2 {
+
+        font-size:29px;
+
+    }
+
+
+    body.contacts-page .info-text p {
+
+        font-size:16px;
+
+    }
+
+
+    body.contacts-page .things-list {
+
+        padding:
+            22px 24px;
+
+    }
+
+
+    /* =================================================
+       ROUTE
+    ================================================= */
+
+    body.contacts-page .route-cards {
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:20px;
+
+        padding:
+            25px 30px;
+
+    }
+
+
+    body.contacts-page .route-cards .info-card {
+
+        min-height:140px;
+
+        padding:
+            23px 25px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+===================================================== */
+
+@media (max-width:768px) {
+
+    /* =================================================
+       HERO
+       КАРТИНКА → ТЕКСТ
+    ================================================= */
+
+    body.contacts-page .inner-hero {
+
+        display:flex;
+
+        flex-direction:column;
+
+        width:94%;
+
+        min-height:0;
+
+        gap:0;
+
+        margin:
+            25px auto 40px;
+
+    }
+
+
+    body.contacts-page .inner-hero-image {
+
+        order:1;
+
+        width:100%;
+
+    }
+
+
+    body.contacts-page .inner-hero-image img {
+
+        width:100%;
+
+        height:300px;
+
+        object-fit:cover;
+
+    }
+
+
+    body.contacts-page .inner-hero-text {
+
+        order:2;
+
+        width:100%;
+
+        min-height:0;
+
+        padding:
+            28px 25px;
+
+    }
+
+
+    body.contacts-page .inner-hero h1 {
+
+        font-size:34px;
+
+    }
+
+
+    body.contacts-page .inner-hero p {
+
+        font-size:15px;
+
+        line-height:1.65;
+
+    }
+
+
+    /* =================================================
+       CONTENT
+    ================================================= */
+
+    body.contacts-page .inner-content {
+
+        width:94%;
+
+        padding-bottom:50px;
+
+    }
+
+
+    /* =================================================
+       CONTACT INFO
+    ================================================= */
+
+    body.contacts-page .contacts-info {
+
+        width:100%;
+
+        margin:
+            25px auto 35px;
+
+        padding:
+            24px 20px;
+
+        border-radius:24px;
+
+    }
+
+
+    body.contacts-page .contacts-info h2 {
+
+        font-size:28px;
+
+    }
+
+
+    body.contacts-page .contact-grid {
+
+        grid-template-columns:1fr;
+
+        gap:0;
+
+    }
+
+
+    body.contacts-page .contact-column {
+
+        min-height:0;
+
+        padding:
+            18px 18px 20px;
+
+    }
+
+
+    body.contacts-page .contact-column::before {
+
+        left:0;
+
+        top:8px;
+
+        bottom:8px;
+
+    }
+
+
+    body.contacts-page .contact-column h3 {
+
+        font-size:22px;
+
+        margin-bottom:12px;
+
+    }
+
+
+    body.contacts-page .contact-column,
+    body.contacts-page .contact-column p,
+    body.contacts-page .contact-address span {
+
+        font-size:15px;
+
+        line-height:1.6;
+
+    }
+
+
+    /* =================================================
+       SOCIAL
+    ================================================= */
+
+    body.contacts-page .contact-social {
+
+        gap:10px;
+
+    }
+
+
+    /* =================================================
+       MAP
+    ================================================= */
+
+    body.contacts-page .map-block {
+
+        padding:
+            22px 18px;
+
+        margin-bottom:35px;
+
+        border-radius:24px;
+
+    }
+
+
+    body.contacts-page .map-block h2 {
+
+        font-size:28px;
+
+        margin-bottom:22px;
+
+    }
+
+
+    body.contacts-page .map-placeholder {
+
+        height:300px;
+
+        border-radius:22px;
+
+    }
+
+
+    /* =================================================
+       ADMISSION
+       ТЕКСТ → ТЕКСТ
+    ================================================= */
+
+    body.contacts-page .info-split {
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:
+            28px 22px;
+
+    }
+
+
+    body.contacts-page .info-text {
+
+        width:100%;
+
+    }
+
+
+    body.contacts-page .info-text:first-child {
+
+        padding-right:0;
+
+        padding-bottom:20px;
+
+        border-right:none;
+
+        border-bottom:
+            1px solid rgba(79,101,63,.25);
+
+    }
+
+
+    body.contacts-page .info-text h2 {
+
+        font-size:27px;
+
+    }
+
+
+    body.contacts-page .info-text p {
+
+        font-size:15px;
+
+        line-height:1.7;
+
+    }
+
+
+    body.contacts-page .things-list {
+
+        margin:
+            20px 0;
+
+        padding:
+            20px 18px;
+
+    }
+
+
+    body.contacts-page .things-list li {
+
+        font-size:15px;
+
+        line-height:1.6;
+
+        padding-left:22px;
+
+    }
+
+
+    /* =================================================
+       ROUTE
+    ================================================= */
+
+    body.contacts-page .route-block > h2 {
+
+        font-size:28px;
+
+        margin-bottom:25px;
+
+    }
+
+
+    body.contacts-page .route-cards {
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+        padding:
+            20px 0;
+
+    }
+
+
+    body.contacts-page .route-cards .info-card {
+
+        min-height:0;
+
+        padding:
+            22px 24px;
+
+    }
+
+
+    body.contacts-page .route-cards h3 {
+
+        font-size:22px;
+
+    }
+
+
+    body.contacts-page .route-cards p {
+
+        font-size:15px;
+
+        line-height:1.65;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+   max-width:480px
+===================================================== */
+
+@media (max-width:480px) {
+
+    body.contacts-page .inner-hero {
+
+        width:96%;
+
+    }
+
+
+    body.contacts-page .inner-hero-image img {
+
+        height:250px;
+
+    }
+
+
+    body.contacts-page .inner-hero-text {
+
+        padding:
+            24px 20px;
+
+    }
+
+
+    body.contacts-page .inner-hero h1 {
+
+        font-size:30px;
+
+    }
+
+
+    body.contacts-page .inner-content {
+
+        width:96%;
+
+    }
+
+
+    body.contacts-page .contacts-info {
+
+        padding:
+            22px 16px;
+
+    }
+
+
+    body.contacts-page .contacts-info h2 {
+
+        font-size:25px;
+
+    }
+
+
+    body.contacts-page .contact-column {
+
+        padding:
+            16px 15px 18px;
+
+    }
+
+
+    body.contacts-page .contact-column h3 {
+
+        font-size:20px;
+
+    }
+
+
+    body.contacts-page .map-block {
+
+        padding:
+            20px 15px;
+
+    }
+
+
+    body.contacts-page .map-placeholder {
+
+        height:250px;
+
+    }
+
+
+    body.contacts-page .info-split {
+
+        padding:
+            24px 18px;
+
+    }
+
+
+    body.contacts-page .info-text h2 {
+
+        font-size:25px;
+
+    }
+
+
+    body.contacts-page .route-block > h2 {
+
+        font-size:25px;
+
+    }
+
+
+    body.contacts-page .route-cards {
+
+        padding:
+            16px 0;
+
+    }
+
+
+    body.contacts-page .route-cards .info-card {
+
+        padding:
+            20px 18px;
+
+    }
+
+}
+
+/* =====================================================
+   CONTACTS PAGE — FORCE ALL CONTENT CENTER
+===================================================== */
+
+body.contacts-page .inner-content {
+
+    width:94%;
+
+    max-width:1200px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+
+body.contacts-page .inner-content > * {
+
+    width:100%;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    box-sizing:border-box;
+
+}
+
+/* =====================================================
+   ТЕСТ ХЕРО ВЫХОДИТ ЗА БЛОК!!
+===================================================== */
+@media (min-width:769px) and (max-width:1100px) {
+
+    body.contacts-page .inner-hero h1 {
+
+        font-size:36px;
+
+        line-height:1.18;
+
+    }
+
+}
+@media (max-width:768px) {
+
+    body.contacts-page .inner-hero h1 {
+
+        font-size:30px;
+
+        line-height:1.2;
+
+    }
+
+}
+
+/* =====================================================
+   FEEDBACK FORM PAGE — RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   769px — 1100px
+===================================================== */
+
+@media (min-width:769px) and (max-width:1100px) {
+
+    body.feedback-page .inner-hero {
+
+        width:94%;
+
+        gap:20px;
+
+        min-height:0;
+
+        margin:
+            30px auto 55px;
+
+    }
+
+
+    body.feedback-page .inner-hero-image img {
+
+        height:320px;
+
+    }
+
+
+    body.feedback-page .inner-hero-text {
+
+        min-height:320px;
+
+        padding:
+            35px;
+
+    }
+
+
+    body.feedback-page .inner-hero h1 {
+
+        font-size:38px;
+
+        line-height:1.18;
+
+    }
+
+
+    body.feedback-page .feedback-block {
+
+        width:94%;
+
+        max-width:1000px;
+
+        margin:
+            35px auto 60px;
+
+        padding:
+            32px 35px;
+
+    }
+
+
+    body.feedback-page .feedback-block h2 {
+
+        font-size:31px;
+
+    }
+
+
+    body.feedback-page .feedback-intro {
+
+        font-size:15px;
+
+    }
+
+
+    body.feedback-page .form-row {
+
+        gap:20px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+   max-width:768px
+===================================================== */
+
+@media (max-width:768px) {
+
+    /* HERO */
+
+    body.feedback-page .inner-hero {
+
+        display:flex;
+
+        flex-direction:column;
+
+        width:94%;
+
+        min-height:0;
+
+        gap:0;
+
+        margin:
+            25px auto 40px;
+
+    }
+
+
+    body.feedback-page .inner-hero-image {
+
+        order:1;
+
+        width:100%;
+
+    }
+
+
+    body.feedback-page .inner-hero-image img {
+
+        width:100%;
+
+        height:300px;
+
+        min-height:0;
+
+        object-fit:cover;
+
+    }
+
+
+    body.feedback-page .inner-hero-text {
+
+        order:2;
+
+        width:100%;
+
+        min-height:0;
+
+        padding:
+            28px 25px;
+
+    }
+
+
+    body.feedback-page .inner-hero h1 {
+
+        font-size:34px;
+
+        line-height:1.2;
+
+    }
+
+
+    body.feedback-page .inner-hero p {
+
+        font-size:15px;
+
+        line-height:1.65;
+
+    }
+
+
+    /* FORM */
+
+    body.feedback-page .feedback-block {
+
+        width:94%;
+
+        max-width:none;
+
+        margin:
+            25px auto 50px;
+
+        padding:
+            28px 22px;
+
+        border-radius:24px;
+
+    }
+
+
+    body.feedback-page .feedback-block h2 {
+
+        font-size:28px;
+
+    }
+
+
+    body.feedback-page .feedback-intro {
+
+        font-size:15px;
+
+        line-height:1.65;
+
+        margin-bottom:28px;
+
+    }
+
+
+    body.feedback-page .form-row {
+
+        grid-template-columns:1fr;
+
+        gap:0;
+
+    }
+
+
+    body.feedback-page .form-field {
+
+        margin-bottom:18px;
+
+    }
+
+
+    body.feedback-page .form-field label {
+
+        font-size:14px;
+
+    }
+
+
+    body.feedback-page .form-field input,
+    body.feedback-page .form-field textarea {
+
+        font-size:15px;
+
+        padding:
+            13px 16px;
+
+    }
+
+
+    body.feedback-page .feedback-form button {
+
+        width:100%;
+
+        margin-top:5px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+   max-width:480px
+===================================================== */
+
+@media (max-width:480px) {
+
+    body.feedback-page .inner-hero {
+
+        width:96%;
+
+    }
+
+
+    body.feedback-page .inner-hero-image img {
+
+        height:250px;
+
+    }
+
+
+    body.feedback-page .inner-hero-text {
+
+        padding:
+            24px 20px;
+
+    }
+
+
+    body.feedback-page .inner-hero h1 {
+
+        font-size:30px;
+
+    }
+
+
+    body.feedback-page .inner-content {
+
+        width:96%;
+
+    }
+
+
+    body.feedback-page .feedback-block {
+
+        width:96%;
+
+        padding:
+            24px 18px;
+
+    }
+
+
+    body.feedback-page .feedback-block h2 {
+
+        font-size:25px;
+
+    }
+
+
+    body.feedback-page .feedback-intro {
+
+        font-size:14px;
+
+    }
+
+
+    body.feedback-page .form-field input,
+    body.feedback-page .form-field textarea {
+
+        padding:
+            12px 14px;
+
+    }
+
+}
+
+/* =====================================================
+   ALL INNER PAGES — HERO UP
+   MOBILE ONLY
+   INDEX НЕ ЗАТРАГИВАЕМ
+===================================================== */
+
+@media (max-width:768px) {
+
+    body.inner-page .inner-hero {
+
+        transform:translateY(-30px);
+
+    }
+
+}
